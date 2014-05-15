@@ -25,6 +25,7 @@
 		22AB06691924E5BB00AE3670 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 22AB06641924E5BB00AE3670 /* SVProgressHUD.bundle */; };
 		22AB066A1924E5BB00AE3670 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AB06661924E5BB00AE3670 /* SVProgressHUD.m */; };
 		22AB066B1924E5BB00AE3670 /* TLAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AB06681924E5BB00AE3670 /* TLAlertView.m */; };
+		22AB066E1924EEDC00AE3670 /* CommonMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AB066D1924EEDC00AE3670 /* CommonMethods.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,14 +39,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		22AB06241924C26600AE3670 /* SST Open House 2014.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SST Open House 2014.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22AB06241924C26600AE3670 /* Open House.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Open House.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22AB06271924C26600AE3670 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		22AB06291924C26600AE3670 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		22AB062B1924C26600AE3670 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		22AB062F1924C26600AE3670 /* SST Open House 2014-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SST Open House 2014-Info.plist"; sourceTree = "<group>"; };
+		22AB062F1924C26600AE3670 /* Open House-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Open House-Info.plist"; sourceTree = "<group>"; };
 		22AB06311924C26600AE3670 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		22AB06331924C26600AE3670 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		22AB06351924C26600AE3670 /* SST Open House 2014-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SST Open House 2014-Prefix.pch"; sourceTree = "<group>"; };
+		22AB06351924C26600AE3670 /* Open House-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Open House-Prefix.pch"; sourceTree = "<group>"; };
 		22AB06361924C26600AE3670 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		22AB06371924C26600AE3670 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		22AB063A1924C26600AE3670 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
@@ -53,9 +54,9 @@
 		22AB063F1924C26600AE3670 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		22AB06401924C26600AE3670 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		22AB06421924C26600AE3670 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		22AB06481924C26600AE3670 /* SST Open House 2014Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SST Open House 2014Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22AB06481924C26600AE3670 /* Open HouseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Open HouseTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22AB06491924C26600AE3670 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		22AB06511924C26600AE3670 /* SST Open House 2014Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SST Open House 2014Tests-Info.plist"; sourceTree = "<group>"; };
+		22AB06511924C26600AE3670 /* Open HouseTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Open HouseTests-Info.plist"; sourceTree = "<group>"; };
 		22AB06531924C26600AE3670 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		22AB06551924C26600AE3670 /* SST_Open_House_2014Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SST_Open_House_2014Tests.m; sourceTree = "<group>"; };
 		22AB06631924E5BB00AE3670 /* SVProgressHUD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
@@ -64,6 +65,8 @@
 		22AB06661924E5BB00AE3670 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
 		22AB06671924E5BB00AE3670 /* TLAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLAlertView.h; sourceTree = "<group>"; };
 		22AB06681924E5BB00AE3670 /* TLAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLAlertView.m; sourceTree = "<group>"; };
+		22AB066C1924EEDC00AE3670 /* CommonMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonMethods.h; sourceTree = "<group>"; };
+		22AB066D1924EEDC00AE3670 /* CommonMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonMethods.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,8 +107,8 @@
 		22AB06251924C26600AE3670 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				22AB06241924C26600AE3670 /* SST Open House 2014.app */,
-				22AB06481924C26600AE3670 /* SST Open House 2014Tests.xctest */,
+				22AB06241924C26600AE3670 /* Open House.app */,
+				22AB06481924C26600AE3670 /* Open HouseTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -126,6 +129,8 @@
 			children = (
 				22AB06361924C26600AE3670 /* AppDelegate.h */,
 				22AB06371924C26600AE3670 /* AppDelegate.m */,
+				22AB066C1924EEDC00AE3670 /* CommonMethods.h */,
+				22AB066D1924EEDC00AE3670 /* CommonMethods.m */,
 				22AB06391924C26600AE3670 /* Main_iPhone.storyboard */,
 				22AB063C1924C26600AE3670 /* Main_iPad.storyboard */,
 				22AB063F1924C26600AE3670 /* ViewController.h */,
@@ -139,10 +144,10 @@
 		22AB062E1924C26600AE3670 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				22AB062F1924C26600AE3670 /* SST Open House 2014-Info.plist */,
+				22AB062F1924C26600AE3670 /* Open House-Info.plist */,
 				22AB06301924C26600AE3670 /* InfoPlist.strings */,
 				22AB06331924C26600AE3670 /* main.m */,
-				22AB06351924C26600AE3670 /* SST Open House 2014-Prefix.pch */,
+				22AB06351924C26600AE3670 /* Open House-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -159,7 +164,7 @@
 		22AB06501924C26600AE3670 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				22AB06511924C26600AE3670 /* SST Open House 2014Tests-Info.plist */,
+				22AB06511924C26600AE3670 /* Open HouseTests-Info.plist */,
 				22AB06521924C26600AE3670 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -190,9 +195,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		22AB06231924C26600AE3670 /* SST Open House 2014 */ = {
+		22AB06231924C26600AE3670 /* Open House */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 22AB06591924C26600AE3670 /* Build configuration list for PBXNativeTarget "SST Open House 2014" */;
+			buildConfigurationList = 22AB06591924C26600AE3670 /* Build configuration list for PBXNativeTarget "Open House" */;
 			buildPhases = (
 				22AB06201924C26600AE3670 /* Sources */,
 				22AB06211924C26600AE3670 /* Frameworks */,
@@ -202,14 +207,14 @@
 			);
 			dependencies = (
 			);
-			name = "SST Open House 2014";
+			name = "Open House";
 			productName = "SST Open House 2014";
-			productReference = 22AB06241924C26600AE3670 /* SST Open House 2014.app */;
+			productReference = 22AB06241924C26600AE3670 /* Open House.app */;
 			productType = "com.apple.product-type.application";
 		};
-		22AB06471924C26600AE3670 /* SST Open House 2014Tests */ = {
+		22AB06471924C26600AE3670 /* Open HouseTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 22AB065C1924C26600AE3670 /* Build configuration list for PBXNativeTarget "SST Open House 2014Tests" */;
+			buildConfigurationList = 22AB065C1924C26600AE3670 /* Build configuration list for PBXNativeTarget "Open HouseTests" */;
 			buildPhases = (
 				22AB06441924C26600AE3670 /* Sources */,
 				22AB06451924C26600AE3670 /* Frameworks */,
@@ -220,9 +225,9 @@
 			dependencies = (
 				22AB064E1924C26600AE3670 /* PBXTargetDependency */,
 			);
-			name = "SST Open House 2014Tests";
+			name = "Open HouseTests";
 			productName = "SST Open House 2014Tests";
-			productReference = 22AB06481924C26600AE3670 /* SST Open House 2014Tests.xctest */;
+			productReference = 22AB06481924C26600AE3670 /* Open HouseTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -239,7 +244,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 22AB061F1924C26600AE3670 /* Build configuration list for PBXProject "SST Open House 2014" */;
+			buildConfigurationList = 22AB061F1924C26600AE3670 /* Build configuration list for PBXProject "Open House" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -252,8 +257,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				22AB06231924C26600AE3670 /* SST Open House 2014 */,
-				22AB06471924C26600AE3670 /* SST Open House 2014Tests */,
+				22AB06231924C26600AE3670 /* Open House */,
+				22AB06471924C26600AE3670 /* Open HouseTests */,
 			);
 		};
 /* End PBXProject section */
@@ -287,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22AB06411924C26600AE3670 /* ViewController.m in Sources */,
+				22AB066E1924EEDC00AE3670 /* CommonMethods.m in Sources */,
 				22AB066A1924E5BB00AE3670 /* SVProgressHUD.m in Sources */,
 				22AB06381924C26600AE3670 /* AppDelegate.m in Sources */,
 				22AB06341924C26600AE3670 /* main.m in Sources */,
@@ -307,7 +313,7 @@
 /* Begin PBXTargetDependency section */
 		22AB064E1924C26600AE3670 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 22AB06231924C26600AE3670 /* SST Open House 2014 */;
+			target = 22AB06231924C26600AE3670 /* Open House */;
 			targetProxy = 22AB064D1924C26600AE3670 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -426,10 +432,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SST Open House 2014/SST Open House 2014-Prefix.pch";
-				INFOPLIST_FILE = "SST Open House 2014/SST Open House 2014-Info.plist";
+				GCC_PREFIX_HEADER = "SST Open House 2014/Open House-Prefix.pch";
+				INFOPLIST_FILE = "SST Open House 2014/Open House-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Open House";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -440,10 +446,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SST Open House 2014/SST Open House 2014-Prefix.pch";
-				INFOPLIST_FILE = "SST Open House 2014/SST Open House 2014-Info.plist";
+				GCC_PREFIX_HEADER = "SST Open House 2014/Open House-Prefix.pch";
+				INFOPLIST_FILE = "SST Open House 2014/Open House-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Open House";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -463,8 +469,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "SST Open House 2014Tests/SST Open House 2014Tests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "SST Open House 2014Tests/Open HouseTests-Info.plist";
+				PRODUCT_NAME = "Open HouseTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -481,8 +487,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SST Open House 2014/SST Open House 2014-Prefix.pch";
-				INFOPLIST_FILE = "SST Open House 2014Tests/SST Open House 2014Tests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "SST Open House 2014Tests/Open HouseTests-Info.plist";
+				PRODUCT_NAME = "Open HouseTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -491,7 +497,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		22AB061F1924C26600AE3670 /* Build configuration list for PBXProject "SST Open House 2014" */ = {
+		22AB061F1924C26600AE3670 /* Build configuration list for PBXProject "Open House" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				22AB06571924C26600AE3670 /* Debug */,
@@ -500,7 +506,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		22AB06591924C26600AE3670 /* Build configuration list for PBXNativeTarget "SST Open House 2014" */ = {
+		22AB06591924C26600AE3670 /* Build configuration list for PBXNativeTarget "Open House" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				22AB065A1924C26600AE3670 /* Debug */,
@@ -508,7 +514,7 @@
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		22AB065C1924C26600AE3670 /* Build configuration list for PBXNativeTarget "SST Open House 2014Tests" */ = {
+		22AB065C1924C26600AE3670 /* Build configuration list for PBXNativeTarget "Open HouseTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				22AB065D1924C26600AE3670 /* Debug */,

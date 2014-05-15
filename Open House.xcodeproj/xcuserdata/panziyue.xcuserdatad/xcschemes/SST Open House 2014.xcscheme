@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "22AB06231924C26600AE3670"
                BuildableName = "SST Open House 2014.app"
-               BlueprintName = "SST Open House 2014"
-               ReferencedContainer = "container:SST Open House 2014.xcodeproj">
+               BlueprintName = "Open House"
+               ReferencedContainer = "container:Open House.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,8 +34,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "22AB06471924C26600AE3670"
                BuildableName = "SST Open House 2014Tests.xctest"
-               BlueprintName = "SST Open House 2014Tests"
-               ReferencedContainer = "container:SST Open House 2014.xcodeproj">
+               BlueprintName = "Open HouseTests"
+               ReferencedContainer = "container:Open House.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -44,8 +44,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "22AB06231924C26600AE3670"
             BuildableName = "SST Open House 2014.app"
-            BlueprintName = "SST Open House 2014"
-            ReferencedContainer = "container:SST Open House 2014.xcodeproj">
+            BlueprintName = "Open House"
+            ReferencedContainer = "container:Open House.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -63,8 +63,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "22AB06231924C26600AE3670"
             BuildableName = "SST Open House 2014.app"
-            BlueprintName = "SST Open House 2014"
-            ReferencedContainer = "container:SST Open House 2014.xcodeproj">
+            BlueprintName = "Open House"
+            ReferencedContainer = "container:Open House.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -81,8 +81,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "22AB06231924C26600AE3670"
             BuildableName = "SST Open House 2014.app"
-            BlueprintName = "SST Open House 2014"
-            ReferencedContainer = "container:SST Open House 2014.xcodeproj">
+            BlueprintName = "Open House"
+            ReferencedContainer = "container:Open House.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
