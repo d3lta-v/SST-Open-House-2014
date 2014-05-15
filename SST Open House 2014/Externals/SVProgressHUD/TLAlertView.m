@@ -10,7 +10,7 @@
 
 static const CGFloat animationDuration = 0.4f;
 static const CGFloat alertViewWidth = 270.0f;
-static const CGFloat buttonHeight = 44.0f;
+//static const CGFloat buttonHeight = 44.0f;
 static const CGFloat marginInnerView    = 10.0f;
 static const CGFloat separatorEachEle   = 10.0f;
 
