@@ -26,6 +26,7 @@
 		22AB066A1924E5BB00AE3670 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AB06661924E5BB00AE3670 /* SVProgressHUD.m */; };
 		22AB066B1924E5BB00AE3670 /* TLAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AB06681924E5BB00AE3670 /* TLAlertView.m */; };
 		22AB066E1924EEDC00AE3670 /* CommonMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AB066D1924EEDC00AE3670 /* CommonMethods.m */; };
+		22AB06791924F5B000AE3670 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AB06781924F5B000AE3670 /* AboutViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,8 @@
 		22AB06681924E5BB00AE3670 /* TLAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLAlertView.m; sourceTree = "<group>"; };
 		22AB066C1924EEDC00AE3670 /* CommonMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonMethods.h; sourceTree = "<group>"; };
 		22AB066D1924EEDC00AE3670 /* CommonMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonMethods.m; sourceTree = "<group>"; };
+		22AB06771924F5B000AE3670 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		22AB06781924F5B000AE3670 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +138,8 @@
 				22AB063C1924C26600AE3670 /* Main_iPad.storyboard */,
 				22AB063F1924C26600AE3670 /* ViewController.h */,
 				22AB06401924C26600AE3670 /* ViewController.m */,
+				22AB06771924F5B000AE3670 /* AboutViewController.h */,
+				22AB06781924F5B000AE3670 /* AboutViewController.m */,
 				22AB06421924C26600AE3670 /* Images.xcassets */,
 				22AB062E1924C26600AE3670 /* Supporting Files */,
 			);
@@ -291,6 +296,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22AB06791924F5B000AE3670 /* AboutViewController.m in Sources */,
 				22AB06411924C26600AE3670 /* ViewController.m in Sources */,
 				22AB066E1924EEDC00AE3670 /* CommonMethods.m in Sources */,
 				22AB066A1924E5BB00AE3670 /* SVProgressHUD.m in Sources */,
