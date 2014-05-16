@@ -7,8 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "WebViewController.h"
 
 @interface ViewController ()
+{
+    NSString *url;
+}
 
 @end
 
@@ -39,6 +43,40 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)launchFb:(id)sender {
+    url = @"https://www.facebook.com/ssts.1technologydrive";
+    [self performSegueWithIdentifier:@"gotoWeb" sender:self];
+}
+
+- (IBAction)launchTwitter:(id)sender {
+    url = @"https://twitter.com/SSTSingapore";
+    [self performSegueWithIdentifier:@"gotoWeb" sender:self];
+}
+
+- (IBAction)launchInfo:(id)sender {
+    url = @"http://www.sst.edu.sg/contact-us/faqs/";
+    [self performSegueWithIdentifier:@"gotoWeb" sender:self];
+}
+
+- (IBAction)launchExhibition:(id)sender {
+    url = @"http://www.sst.edu.sg/exhibition";
+    [self performSegueWithIdentifier:@"gotoWeb" sender:self];
+}
+
+- (IBAction)launchWebsite:(id)sender {
+    url = @"http://www.sst.edu.sg";
+    [self performSegueWithIdentifier:@"gotoWeb" sender:self];
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"gotoWeb"]) {
+        UINavigationController *navController = (UINavigationController *)segue.destinationViewController;
+        WebViewController *newVC = (WebViewController *)navController.topViewController;
+        newVC.urlString = url;
+    }
 }
 
 @end

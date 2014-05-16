@@ -27,6 +27,12 @@
 		22AB066B1924E5BB00AE3670 /* TLAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AB06681924E5BB00AE3670 /* TLAlertView.m */; };
 		22AB066E1924EEDC00AE3670 /* CommonMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AB066D1924EEDC00AE3670 /* CommonMethods.m */; };
 		22AB06791924F5B000AE3670 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AB06781924F5B000AE3670 /* AboutViewController.m */; };
+		22AB06831925E19F00AE3670 /* NJKWebViewProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AB06801925E19F00AE3670 /* NJKWebViewProgress.m */; };
+		22AB06841925E19F00AE3670 /* NJKWebViewProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AB06821925E19F00AE3670 /* NJKWebViewProgressView.m */; };
+		22AB06871925E24A00AE3670 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AB06861925E24A00AE3670 /* WebViewController.m */; };
+		22AB068D19260F4800AE3670 /* Maps1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AB068C19260F4800AE3670 /* Maps1ViewController.m */; };
+		22AB069019260F4E00AE3670 /* Maps2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AB068F19260F4E00AE3670 /* Maps2ViewController.m */; };
+		22AB069319260F5400AE3670 /* Maps3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AB069219260F5400AE3670 /* Maps3ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +76,18 @@
 		22AB066D1924EEDC00AE3670 /* CommonMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonMethods.m; sourceTree = "<group>"; };
 		22AB06771924F5B000AE3670 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
 		22AB06781924F5B000AE3670 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		22AB067F1925E19F00AE3670 /* NJKWebViewProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NJKWebViewProgress.h; sourceTree = "<group>"; };
+		22AB06801925E19F00AE3670 /* NJKWebViewProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NJKWebViewProgress.m; sourceTree = "<group>"; };
+		22AB06811925E19F00AE3670 /* NJKWebViewProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NJKWebViewProgressView.h; sourceTree = "<group>"; };
+		22AB06821925E19F00AE3670 /* NJKWebViewProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NJKWebViewProgressView.m; sourceTree = "<group>"; };
+		22AB06851925E24A00AE3670 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		22AB06861925E24A00AE3670 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		22AB068B19260F4800AE3670 /* Maps1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Maps1ViewController.h; sourceTree = "<group>"; };
+		22AB068C19260F4800AE3670 /* Maps1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Maps1ViewController.m; sourceTree = "<group>"; };
+		22AB068E19260F4E00AE3670 /* Maps2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Maps2ViewController.h; sourceTree = "<group>"; };
+		22AB068F19260F4E00AE3670 /* Maps2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Maps2ViewController.m; sourceTree = "<group>"; };
+		22AB069119260F5400AE3670 /* Maps3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Maps3ViewController.h; sourceTree = "<group>"; };
+		22AB069219260F5400AE3670 /* Maps3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Maps3ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +158,9 @@
 				22AB06401924C26600AE3670 /* ViewController.m */,
 				22AB06771924F5B000AE3670 /* AboutViewController.h */,
 				22AB06781924F5B000AE3670 /* AboutViewController.m */,
+				22AB06851925E24A00AE3670 /* WebViewController.h */,
+				22AB06861925E24A00AE3670 /* WebViewController.m */,
+				22AB068A19260F3A00AE3670 /* Maps */,
 				22AB06421924C26600AE3670 /* Images.xcassets */,
 				22AB062E1924C26600AE3670 /* Supporting Files */,
 			);
@@ -178,6 +199,7 @@
 		22AB06611924E5BB00AE3670 /* Externals */ = {
 			isa = PBXGroup;
 			children = (
+				22AB067E1925E19F00AE3670 /* NJKWebViewProgress */,
 				22AB06621924E5BB00AE3670 /* SVProgressHUD */,
 			);
 			name = Externals;
@@ -195,6 +217,30 @@
 				22AB06681924E5BB00AE3670 /* TLAlertView.m */,
 			);
 			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		22AB067E1925E19F00AE3670 /* NJKWebViewProgress */ = {
+			isa = PBXGroup;
+			children = (
+				22AB067F1925E19F00AE3670 /* NJKWebViewProgress.h */,
+				22AB06801925E19F00AE3670 /* NJKWebViewProgress.m */,
+				22AB06811925E19F00AE3670 /* NJKWebViewProgressView.h */,
+				22AB06821925E19F00AE3670 /* NJKWebViewProgressView.m */,
+			);
+			path = NJKWebViewProgress;
+			sourceTree = "<group>";
+		};
+		22AB068A19260F3A00AE3670 /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				22AB068B19260F4800AE3670 /* Maps1ViewController.h */,
+				22AB068C19260F4800AE3670 /* Maps1ViewController.m */,
+				22AB068E19260F4E00AE3670 /* Maps2ViewController.h */,
+				22AB068F19260F4E00AE3670 /* Maps2ViewController.m */,
+				22AB069119260F5400AE3670 /* Maps3ViewController.h */,
+				22AB069219260F5400AE3670 /* Maps3ViewController.m */,
+			);
+			path = Maps;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,12 +342,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22AB06831925E19F00AE3670 /* NJKWebViewProgress.m in Sources */,
+				22AB06871925E24A00AE3670 /* WebViewController.m in Sources */,
 				22AB06791924F5B000AE3670 /* AboutViewController.m in Sources */,
 				22AB06411924C26600AE3670 /* ViewController.m in Sources */,
 				22AB066E1924EEDC00AE3670 /* CommonMethods.m in Sources */,
 				22AB066A1924E5BB00AE3670 /* SVProgressHUD.m in Sources */,
 				22AB06381924C26600AE3670 /* AppDelegate.m in Sources */,
 				22AB06341924C26600AE3670 /* main.m in Sources */,
+				22AB068D19260F4800AE3670 /* Maps1ViewController.m in Sources */,
+				22AB06841925E19F00AE3670 /* NJKWebViewProgressView.m in Sources */,
+				22AB069319260F5400AE3670 /* Maps3ViewController.m in Sources */,
+				22AB069019260F4E00AE3670 /* Maps2ViewController.m in Sources */,
 				22AB066B1924E5BB00AE3670 /* TLAlertView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -519,6 +571,7 @@
 				22AB065B1924C26600AE3670 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		22AB065C1924C26600AE3670 /* Build configuration list for PBXNativeTarget "Open HouseTests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +580,7 @@
 				22AB065E1924C26600AE3670 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

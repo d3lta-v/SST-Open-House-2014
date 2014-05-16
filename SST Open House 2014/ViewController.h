@@ -10,4 +10,10 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)launchFb:(id)sender;
+- (IBAction)launchTwitter:(id)sender;
+- (IBAction)launchInfo:(id)sender;
+- (IBAction)launchExhibition:(id)sender;
+- (IBAction)launchWebsite:(id)sender;
+
 @end
