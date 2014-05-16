@@ -40,6 +40,8 @@
     [_statix addMotionEffect:group];
     [_inc addMotionEffect:group];
     [_cyber addMotionEffect:group];
+    [_arrow1 addMotionEffect:group];
+    [_arrow2 addMotionEffect:group];
     
     for (UILabel *label in self.words) {
         [label addMotionEffect:group];
