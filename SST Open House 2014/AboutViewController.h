@@ -14,4 +14,10 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *arrow2;
 
+@property (weak, nonatomic) IBOutlet UIImageView *statix;
+@property (weak, nonatomic) IBOutlet UIImageView *inc;
+@property (weak, nonatomic) IBOutlet UIImageView *cyber;
+
+@property (strong, nonatomic) IBOutletCollection(UILabel) NSArray *words;
+
 @end

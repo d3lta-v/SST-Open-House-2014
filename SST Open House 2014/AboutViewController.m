@@ -7,6 +7,7 @@
 //
 
 #import "AboutViewController.h"
+#import "CommonMethods.h"
 
 @interface AboutViewController ()
 
@@ -32,7 +33,17 @@
     [swipe setDirection:UISwipeGestureRecognizerDirectionDown];
     [self.view addGestureRecognizer:swipe];
     
+    // add parallax effects
+    UIMotionEffectGroup *group = [UIMotionEffectGroup new];
+    group.motionEffects = @[[CommonMethods getInterpolatingMotionEffect:@"center.x" minMaxValues:-10], [CommonMethods getInterpolatingMotionEffect:@"center.y" minMaxValues:-10]];
     
+    [_statix addMotionEffect:group];
+    [_inc addMotionEffect:group];
+    [_cyber addMotionEffect:group];
+    
+    for (UILabel *label in self.words) {
+        [label addMotionEffect:group];
+    }
 }
 
 -(void)viewWillAppear:(BOOL)animated
