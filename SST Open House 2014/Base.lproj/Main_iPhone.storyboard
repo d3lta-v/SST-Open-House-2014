@@ -431,25 +431,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="English" translatesAutoresizingMaskIntoConstraints="NO" id="wre-ag-wH8">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wre-ag-wH8">
                                 <rect key="frame" x="0.0" y="65" width="320" height="240"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ixs-jh-P4E">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="!!! Problem Loading !!!" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ixs-jh-P4E">
                                 <rect key="frame" x="0.0" y="305" width="320" height="263"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <mutableString key="text">Language is functional as it is used to make and exchange meanings influenced by social and cultural contexts. Locally, the English language is used to facilitate communication and bonding among the different ethnic and cultural groups. Globally, it allows Singaporeans to participate actively and effectively in a knowledge-based economy where it is the lingua franca of the Internet, of science and technology, and of world economy.
-
-Learning Outcomes
-
-At the end of four years, a SST graduate who has mastered the English Language will be able to:
-
-Communicate fluently and effectively using appropriate text types to achieve the purpose, context, culture and audience intended
-Employ critical and creative thinking skills in evaluating arguments and opinions and generating ideas
-Appreciate the nuances in language as used by writers in varying texts
-Understand the relationships between ideas within and across disciplines
-Use Information and Communication Technology actively and purposefully to facilitate the understanding, learning and use of the English Language.</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -895,7 +884,6 @@ Use Information and Communication Technology actively and purposefully to facili
         <image name="Button" width="500" height="250"/>
         <image name="CurriculumBg" width="206" height="360"/>
         <image name="Cyber" width="325" height="194"/>
-        <image name="English" width="423" height="230"/>
         <image name="Exhibition" width="250" height="250"/>
         <image name="ExhibitionSelected" width="250" height="250"/>
         <image name="Facebook" width="500" height="500"/>
