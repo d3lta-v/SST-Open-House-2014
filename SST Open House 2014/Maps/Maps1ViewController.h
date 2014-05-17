@@ -12,4 +12,6 @@
 
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
 
+-(IBAction)goBack:(id)sender;
+
 @end

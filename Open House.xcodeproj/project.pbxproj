@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		223250131926624A00E634E0 /* GettingStartedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 223250121926624A00E634E0 /* GettingStartedViewController.m */; };
+		22325016192716D100E634E0 /* CurriculumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22325015192716D100E634E0 /* CurriculumViewController.m */; };
 		22AB06281924C26600AE3670 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22AB06271924C26600AE3670 /* Foundation.framework */; };
 		22AB062A1924C26600AE3670 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22AB06291924C26600AE3670 /* CoreGraphics.framework */; };
 		22AB062C1924C26600AE3670 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22AB062B1924C26600AE3670 /* UIKit.framework */; };
@@ -46,6 +48,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		223250111926624A00E634E0 /* GettingStartedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GettingStartedViewController.h; sourceTree = "<group>"; };
+		223250121926624A00E634E0 /* GettingStartedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GettingStartedViewController.m; sourceTree = "<group>"; };
+		22325014192716D100E634E0 /* CurriculumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurriculumViewController.h; sourceTree = "<group>"; };
+		22325015192716D100E634E0 /* CurriculumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurriculumViewController.m; sourceTree = "<group>"; };
 		22AB06241924C26600AE3670 /* Open House.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Open House.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22AB06271924C26600AE3670 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		22AB06291924C26600AE3670 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -156,10 +162,14 @@
 				22AB063C1924C26600AE3670 /* Main_iPad.storyboard */,
 				22AB063F1924C26600AE3670 /* ViewController.h */,
 				22AB06401924C26600AE3670 /* ViewController.m */,
+				223250111926624A00E634E0 /* GettingStartedViewController.h */,
+				223250121926624A00E634E0 /* GettingStartedViewController.m */,
 				22AB06771924F5B000AE3670 /* AboutViewController.h */,
 				22AB06781924F5B000AE3670 /* AboutViewController.m */,
 				22AB06851925E24A00AE3670 /* WebViewController.h */,
 				22AB06861925E24A00AE3670 /* WebViewController.m */,
+				22325014192716D100E634E0 /* CurriculumViewController.h */,
+				22325015192716D100E634E0 /* CurriculumViewController.m */,
 				22AB068A19260F3A00AE3670 /* Maps */,
 				22AB06421924C26600AE3670 /* Images.xcassets */,
 				22AB062E1924C26600AE3670 /* Supporting Files */,
@@ -344,11 +354,13 @@
 			files = (
 				22AB06831925E19F00AE3670 /* NJKWebViewProgress.m in Sources */,
 				22AB06871925E24A00AE3670 /* WebViewController.m in Sources */,
+				22325016192716D100E634E0 /* CurriculumViewController.m in Sources */,
 				22AB06791924F5B000AE3670 /* AboutViewController.m in Sources */,
 				22AB06411924C26600AE3670 /* ViewController.m in Sources */,
 				22AB066E1924EEDC00AE3670 /* CommonMethods.m in Sources */,
 				22AB066A1924E5BB00AE3670 /* SVProgressHUD.m in Sources */,
 				22AB06381924C26600AE3670 /* AppDelegate.m in Sources */,
+				223250131926624A00E634E0 /* GettingStartedViewController.m in Sources */,
 				22AB06341924C26600AE3670 /* main.m in Sources */,
 				22AB068D19260F4800AE3670 /* Maps1ViewController.m in Sources */,
 				22AB06841925E19F00AE3670 /* NJKWebViewProgressView.m in Sources */,

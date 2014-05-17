@@ -72,6 +72,11 @@
     [self centerScrollViewContents];
 }
 
+-(IBAction)goBack:(id)sender
+{
+    [self.tabBarController dismissViewControllerAnimated:YES completion:nil];
+}
+
 - (void)centerScrollViewContents {
     CGSize boundsSize = self.scrollView.bounds.size;
     CGRect contentsFrame = self.imageView.frame;

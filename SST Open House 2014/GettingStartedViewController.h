@@ -1,5 +1,5 @@
 //
-//  Maps3ViewController.h
+//  GettingStartedViewController.h
 //  Open House
 //
 //  Created by Pan Ziyue on 16/5/14.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Maps3ViewController : UIViewController
+@interface GettingStartedViewController : UIViewController
 
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
 

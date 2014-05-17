@@ -87,6 +87,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="K3K-C2-idb" kind="modal" id="URd-RY-bhH"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yqD-Di-etE">
                                 <rect key="frame" x="35" y="304" width="250" height="50"/>
@@ -109,6 +112,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="ABX-Kj-kRB" kind="modal" id="KmE-6w-27x"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dLm-7i-AIq">
                                 <rect key="frame" x="35" y="450" width="45" height="45"/>
@@ -158,7 +164,41 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aNa-i6-Q9h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="727" y="772"/>
+            <point key="canvasLocation" x="727" y="1640"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="HHm-Nb-QVa">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="K3K-C2-idb" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bpl-iF-n7q">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Xcl-ew-Bxq" kind="relationship" relationship="rootViewController" id="YuG-Tu-qWO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H6L-9A-gfX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="727" y="846"/>
+        </scene>
+        <!--Curriculum View Controller-->
+        <scene sceneID="o4F-yN-xEF">
+            <objects>
+                <viewController id="Xcl-ew-Bxq" customClass="CurriculumViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sAg-np-lWk"/>
+                        <viewControllerLayoutGuide type="bottom" id="PML-BU-j5g"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QGm-Sl-77t">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="zsr-zh-yOE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mDJ-hN-cqb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1261" y="846"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="GqJ-lL-zWi">
@@ -195,13 +235,84 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gjp-yP-mEN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1237" y="772"/>
+            <point key="canvasLocation" x="1261" y="1640"/>
         </scene>
-        <!--Navigation Controller - Item-->
+        <!--Navigation Controller-->
+        <scene sceneID="fiC-zE-HFT">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="ABX-Kj-kRB" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0WX-e7-6bA">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Pqh-7c-cDz" kind="relationship" relationship="rootViewController" id="Za7-Px-aFy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j5I-TB-hxf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="727" y="-2051"/>
+        </scene>
+        <!--Getting Started View Controller - Getting Started-->
+        <scene sceneID="6fK-6z-wa8">
+            <objects>
+                <viewController id="Pqh-7c-cDz" customClass="GettingStartedViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sdb-Ty-F1X"/>
+                        <viewControllerLayoutGuide type="bottom" id="vHI-pe-w0B"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0sj-VW-fHa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NRn-Z6-Wa3">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Pqh-7c-cDz" id="hqs-Bu-J8U"/>
+                                </connections>
+                            </scrollView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Vice-Principal Talk at the Open House." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2l-ol-qhW">
+                                <rect key="frame" x="13" y="123" width="295" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please do register for the Principal/" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Znc-i2-Aqg">
+                                <rect key="frame" x="25" y="94" width="270" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Refer to the poster below for more info." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pvk-ib-TpX">
+                                <rect key="frame" x="9" y="152" width="302" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Getting Started" id="AjQ-Yo-FDq">
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="EXG-eT-ec1">
+                            <connections>
+                                <action selector="goBack:" destination="Pqh-7c-cDz" id="DVF-D4-Pm7"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="scrollView" destination="NRn-Z6-Wa3" id="ICS-yC-XLy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JCv-Ij-955" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1261" y="-2051"/>
+        </scene>
+        <!--Navigation Controller - Level 1-->
         <scene sceneID="FlA-Vl-kTM">
             <objects>
                 <navigationController definesPresentationContext="YES" id="FvH-Ye-9yS" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Lbf-3L-eFi"/>
+                    <tabBarItem key="tabBarItem" title="Level 1" id="Lbf-3L-eFi"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="TXv-L2-EB1">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -237,7 +348,11 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Level 1" id="PsV-go-6LT"/>
                     <navigationItem key="navigationItem" title="Level 1" id="zrS-gs-iqi">
-                        <barButtonItem key="leftBarButtonItem" title="Back" id="JXR-Dh-TDW"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="JXR-Dh-TDW">
+                            <connections>
+                                <action selector="goBack:" destination="gVi-00-dqR" id="EvV-Cg-Rc0"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="scrollView" destination="RCX-W9-vfw" id="ZZG-7J-QZV"/>
@@ -268,11 +383,11 @@
             </objects>
             <point key="canvasLocation" x="727" y="-644"/>
         </scene>
-        <!--Navigation Controller - Item-->
+        <!--Navigation Controller - Level 2-->
         <scene sceneID="OH2-fb-LUh">
             <objects>
                 <navigationController definesPresentationContext="YES" id="98T-S0-hLg" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="LNd-LG-y4w"/>
+                    <tabBarItem key="tabBarItem" title="Level 2" id="LNd-LG-y4w"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="xmg-lG-Fp7">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -308,7 +423,11 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Level 2" id="YXM-to-gi2"/>
                     <navigationItem key="navigationItem" title="Level 2" id="pfE-Tg-aWB">
-                        <barButtonItem key="leftBarButtonItem" title="Back" id="KWt-JR-Egm"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="KWt-JR-Egm">
+                            <connections>
+                                <action selector="goBack:" destination="dsy-pg-qgI" id="fCV-wh-bZz"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="scrollView" destination="85t-pP-7I0" id="TzZ-1V-RQK"/>
@@ -318,11 +437,11 @@
             </objects>
             <point key="canvasLocation" x="1689" y="-644"/>
         </scene>
-        <!--Navigation Controller - Item-->
+        <!--Navigation Controller - Level 3-->
         <scene sceneID="cuH-c3-epN">
             <objects>
                 <navigationController definesPresentationContext="YES" id="0fJ-7b-yZS" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Uyb-r3-eBk"/>
+                    <tabBarItem key="tabBarItem" title="Level 3" id="Uyb-r3-eBk"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="oMJ-IV-MUq">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -358,7 +477,11 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Level 3" id="jeg-8W-Pfd"/>
                     <navigationItem key="navigationItem" title="Level 3" id="5Hd-S0-ugc">
-                        <barButtonItem key="leftBarButtonItem" title="Back" id="rpM-dL-zPJ"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="rpM-dL-zPJ">
+                            <connections>
+                                <action selector="goBack:" destination="eIf-VL-T5m" id="mVd-fm-PeR"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="scrollView" destination="aT0-Tu-Yj8" id="v4E-43-dBy"/>
@@ -461,7 +584,6 @@
                         <outlet property="arrow2" destination="Lh7-fB-xMN" id="WIr-rg-IGr"/>
                         <outlet property="cyber" destination="Ijr-FC-tmr" id="QWs-Y9-fNk"/>
                         <outlet property="inc" destination="Oz7-6e-YpG" id="2ys-1E-Ert"/>
-                        <outlet property="label1" destination="98a-6c-QVV" id="sXa-xI-sUU"/>
                         <outlet property="statix" destination="Rbt-OB-80f" id="JCb-0s-518"/>
                         <outletCollection property="words" destination="98a-6c-QVV" id="ZzN-Pa-44L"/>
                         <outletCollection property="words" destination="GKj-Xn-DgZ" id="pb9-EL-pdh"/>

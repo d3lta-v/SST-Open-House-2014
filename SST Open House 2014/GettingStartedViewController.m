@@ -1,14 +1,14 @@
 //
-//  Maps3ViewController.m
+//  GettingStartedViewController.m
 //  Open House
 //
 //  Created by Pan Ziyue on 16/5/14.
 //  Copyright (c) 2014 Cyber Inc & StatiX Industries. All rights reserved.
 //
 
-#import "Maps3ViewController.h"
+#import "GettingStartedViewController.h"
 
-@interface Maps3ViewController ()
+@interface GettingStartedViewController ()
 
 @property (nonatomic, strong) UIImageView *imageView;
 
@@ -18,9 +18,7 @@
 
 @end
 
-@implementation Maps3ViewController
-
-@synthesize scrollView, imageView;
+@implementation GettingStartedViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -37,7 +35,7 @@
     // Do any additional setup after loading the view.
     
     // Set up the image we want to scroll & zoom and add it to the scroll view
-    UIImage *image = [UIImage imageNamed:@"Map3"];
+    UIImage *image = [UIImage imageNamed:@"IntroPoster"];
     self.imageView = [[UIImageView alloc] initWithImage:image];
     self.imageView.frame = (CGRect){.origin=CGPointMake(0.0f, 0.0f), .size=image.size};
     [self.scrollView addSubview:self.imageView];
@@ -74,7 +72,7 @@
 
 -(IBAction)goBack:(id)sender
 {
-    [self.tabBarController dismissViewControllerAnimated:YES completion:nil];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)centerScrollViewContents {
@@ -139,5 +137,16 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
 
 @end
