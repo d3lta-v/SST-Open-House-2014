@@ -13,6 +13,7 @@
 		2262FCAF19277E8E00B018F2 /* AppliedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2262FCAE19277E8E00B018F2 /* AppliedViewController.m */; };
 		2262FCB219277E9600B018F2 /* CCAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2262FCB119277E9600B018F2 /* CCAViewController.m */; };
 		2262FCB519277F3E00B018F2 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2262FCB419277F3E00B018F2 /* DetailViewController.m */; };
+		2262FCB919279FD300B018F2 /* UIImage-Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2262FCB819279FD300B018F2 /* UIImage-Extensions.m */; };
 		22AB06281924C26600AE3670 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22AB06271924C26600AE3670 /* Foundation.framework */; };
 		22AB062A1924C26600AE3670 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22AB06291924C26600AE3670 /* CoreGraphics.framework */; };
 		22AB062C1924C26600AE3670 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22AB062B1924C26600AE3670 /* UIKit.framework */; };
@@ -64,6 +65,8 @@
 		2262FCB119277E9600B018F2 /* CCAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCAViewController.m; sourceTree = "<group>"; };
 		2262FCB319277F3E00B018F2 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		2262FCB419277F3E00B018F2 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		2262FCB719279FD300B018F2 /* UIImage-Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage-Extensions.h"; sourceTree = "<group>"; };
+		2262FCB819279FD300B018F2 /* UIImage-Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage-Extensions.m"; sourceTree = "<group>"; };
 		22AB06241924C26600AE3670 /* Open House.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Open House.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22AB06271924C26600AE3670 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		22AB06291924C26600AE3670 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -197,6 +200,8 @@
 				22AB06861925E24A00AE3670 /* WebViewController.m */,
 				22325014192716D100E634E0 /* CurriculumViewController.h */,
 				22325015192716D100E634E0 /* CurriculumViewController.m */,
+				2262FCB719279FD300B018F2 /* UIImage-Extensions.h */,
+				2262FCB819279FD300B018F2 /* UIImage-Extensions.m */,
 				2262FCA919277B1500B018F2 /* SubjectVCs */,
 				22AB068A19260F3A00AE3670 /* Maps */,
 				22AB06421924C26600AE3670 /* Images.xcassets */,
@@ -384,6 +389,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22AB06831925E19F00AE3670 /* NJKWebViewProgress.m in Sources */,
+				2262FCB919279FD300B018F2 /* UIImage-Extensions.m in Sources */,
 				22AB06871925E24A00AE3670 /* WebViewController.m in Sources */,
 				22325016192716D100E634E0 /* CurriculumViewController.m in Sources */,
 				22AB06791924F5B000AE3670 /* AboutViewController.m in Sources */,

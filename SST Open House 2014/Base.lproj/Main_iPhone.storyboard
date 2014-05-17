@@ -432,11 +432,11 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="English" translatesAutoresizingMaskIntoConstraints="NO" id="wre-ag-wH8">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="308"/>
+                                <rect key="frame" x="0.0" y="65" width="320" height="240"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ixs-jh-P4E">
-                                <rect key="frame" x="0.0" y="316" width="320" height="252"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ixs-jh-P4E">
+                                <rect key="frame" x="0.0" y="305" width="320" height="263"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <mutableString key="text">Language is functional as it is used to make and exchange meanings influenced by social and cultural contexts. Locally, the English language is used to facilitate communication and bonding among the different ethnic and cultural groups. Globally, it allows Singaporeans to participate actively and effectively in a knowledge-based economy where it is the lingua franca of the Internet, of science and technology, and of world economy.
@@ -456,9 +456,24 @@ Use Information and Communication Technology actively and purposefully to facili
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="tL5-YD-L09"/>
+                    <navigationItem key="navigationItem" id="tL5-YD-L09">
+                        <barButtonItem key="rightBarButtonItem" id="ihx-ru-s7L">
+                            <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" id="NMG-iz-51n">
+                                <rect key="frame" x="243" y="7" width="61" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="" image="BlueArrow"/>
+                                    <segment title="" image="BlueArrowInvert"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentedCtrl:" destination="EQD-gp-CCP" eventType="valueChanged" id="X4D-pi-7nI"/>
+                                </connections>
+                            </segmentedControl>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="imageView" destination="wre-ag-wH8" id="xXh-6Q-SvP"/>
+                        <outlet property="segmentedCtrlData" destination="NMG-iz-51n" id="CcY-ce-ZjF"/>
                         <outlet property="textView" destination="Ixs-jh-P4E" id="whz-r5-Dl9"/>
                     </connections>
                 </viewController>
@@ -773,36 +788,43 @@ Use Information and Communication Technology actively and purposefully to facili
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Special thanks to all the SST Students" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bPZ-gN-zBo">
+                                <rect key="frame" x="17" y="503" width="286" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pan Ziyue" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T3p-Qy-QzT">
-                                <rect key="frame" x="37" y="490" width="66" height="22"/>
+                                <rect key="frame" x="37" y="418" width="66" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="16"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Anurag" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hF-Mf-0xs">
-                                <rect key="frame" x="46" y="520" width="49" height="22"/>
+                                <rect key="frame" x="46" y="448" width="49" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="16"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Designers:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7mP-Y4-9Ei">
-                                <rect key="frame" x="214" y="461" width="72" height="22"/>
+                                <rect key="frame" x="214" y="389" width="72" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="16"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lim Guan Qun" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EbJ-QB-AmY">
-                                <rect key="frame" x="200" y="491" width="100" height="22"/>
+                                <rect key="frame" x="200" y="419" width="100" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="16"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Programmers:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GKj-Xn-DgZ">
-                                <rect key="frame" x="20" y="461" width="101" height="22"/>
+                                <rect key="frame" x="20" y="389" width="101" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -824,19 +846,19 @@ Use Information and Communication Technology actively and purposefully to facili
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Inc" translatesAutoresizingMaskIntoConstraints="NO" id="Oz7-6e-YpG">
-                                <rect key="frame" x="86" y="218" width="148" height="86"/>
+                                <rect key="frame" x="85" y="97" width="150" height="89"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="StatiX" translatesAutoresizingMaskIntoConstraints="NO" id="Rbt-OB-80f">
-                                <rect key="frame" x="96" y="82" width="128" height="128"/>
+                                <rect key="frame" x="20" y="226" width="103" height="103"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cyber" translatesAutoresizingMaskIntoConstraints="NO" id="Ijr-FC-tmr">
-                                <rect key="frame" x="60" y="312" width="200" height="120"/>
+                                <rect key="frame" x="148" y="232" width="152" height="91"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Created by StatiX Ind. and Cyber Inc." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="98a-6c-QVV">
-                                <rect key="frame" x="20" y="424" width="280" height="22"/>
+                                <rect key="frame" x="20" y="359" width="280" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -868,6 +890,8 @@ Use Information and Communication Technology actively and purposefully to facili
     <resources>
         <image name="AboutBg" width="177" height="314"/>
         <image name="Arrow" width="128" height="128"/>
+        <image name="BlueArrow" width="128" height="128"/>
+        <image name="BlueArrowInvert" width="128" height="128"/>
         <image name="Button" width="500" height="250"/>
         <image name="CurriculumBg" width="206" height="360"/>
         <image name="Cyber" width="325" height="194"/>

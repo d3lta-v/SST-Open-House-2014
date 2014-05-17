@@ -7,8 +7,12 @@
 //
 
 #import "AcademicViewController.h"
+#import "DetailViewController.h"
 
 @interface AcademicViewController ()
+{
+    NSUInteger identifier;
+}
 
 @end
 
@@ -36,7 +40,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -44,11 +48,15 @@
 {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    if ([[segue identifier] isEqualToString:@"gotoDetail"]) {
+        [[segue destinationViewController] setIdentifier:identifier];
+    }
 }
-*/
 
-- (IBAction)buttonPressed:(id)sender {
-    NSLog(@"%ld", (long)[sender tag]);
+
+- (IBAction)buttonPressed:(id)sender
+{
+    identifier = [sender tag];
     [self performSegueWithIdentifier:@"gotoDetail" sender:self];
 }
 
