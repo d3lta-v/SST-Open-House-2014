@@ -31,11 +31,14 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    [self.navigationController.navigationBar setBackgroundImage:[UIImage new]
-                                                  forBarMetrics:UIBarMetricsDefault];
-    self.navigationController.navigationBar.shadowImage = [UIImage new];
-    self.navigationController.navigationBar.translucent = YES;
-    self.navigationController.view.backgroundColor = [UIColor clearColor];
+    // Set navigation bar to be fully transparent
+    //[self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
+    //self.navigationController.navigationBar.shadowImage = [UIImage new];
+    //self.navigationController.navigationBar.translucent = YES;
+    //self.navigationController.view.backgroundColor = [UIColor clearColor];
+    
+    // Set 'Done' font weight
+    //[self.navigationItem.leftBarButtonItem setTitleTextAttributes:@{NSFontAttributeName:[UIFont boldSystemFontOfSize:17.0]} forState:UIControlStateNormal];
     
     // Implement parallax
     UIMotionEffectGroup *group = [UIMotionEffectGroup new];

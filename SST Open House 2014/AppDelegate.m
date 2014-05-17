@@ -14,8 +14,9 @@
 {
     // Override point for customization after application launch.
     
-    [[UIBarButtonItem appearance] setTintColor:[UIColor whiteColor]];
-    [UINavigationBar appearance].tintColor = [UIColor whiteColor];
+    //[[UIBarButtonItem appearance] setTintColor:[UIColor whiteColor]];
+    //[UINavigationBar appearance].tintColor = [UIColor whiteColor];
+    //[[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor whiteColor]}];
     
     return YES;
 }

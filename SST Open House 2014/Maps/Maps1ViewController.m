@@ -36,6 +36,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    // Force override global navigationBar color settings
+    /*[self.navigationItem.leftBarButtonItem setTintColor:[UIColor colorWithRed:0 green:(122.0/255.0) blue:(255.0/255.0) alpha:1.0]]; // set color of Done button
+    //self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+    [self.navigationItem.leftBarButtonItem setTitleTextAttributes:@{NSFontAttributeName:[UIFont boldSystemFontOfSize:17.0]} forState:UIControlStateNormal]; // make the done button bold
+    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor darkTextColor]}]; // set color of title*/
+    
+    
     // Set up the image we want to scroll & zoom and add it to the scroll view
     UIImage *image = [UIImage imageNamed:@"Map1"];
     self.imageView = [[UIImageView alloc] initWithImage:image];

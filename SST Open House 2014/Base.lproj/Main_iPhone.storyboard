@@ -306,7 +306,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s9c-G6-qfc">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CurriculumBg" translatesAutoresizingMaskIntoConstraints="NO" id="s9c-G6-qfc">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
@@ -319,10 +319,10 @@
             </objects>
             <point key="canvasLocation" x="2224" y="1652"/>
         </scene>
-        <!--View Controller - Academic Subjects-->
+        <!--Academic View Controller - Academic Subjects-->
         <scene sceneID="tNI-wj-rB2">
             <objects>
-                <viewController id="mx7-yn-xAR" sceneMemberID="viewController">
+                <viewController id="mx7-yn-xAR" customClass="AcademicViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="H2G-Yv-zl6"/>
                         <viewControllerLayoutGuide type="bottom" id="xyT-vP-qWN"/>
@@ -343,8 +343,11 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="mx7-yn-xAR" eventType="touchUpInside" id="yxG-4t-9uo"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="24W-iT-bzc">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="24W-iT-bzc">
                                 <rect key="frame" x="93" y="188" width="134" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
@@ -352,8 +355,11 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="mx7-yn-xAR" eventType="touchUpInside" id="uU8-lC-oxv"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MHT-0n-XmW">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MHT-0n-XmW">
                                 <rect key="frame" x="75" y="238" width="170" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
@@ -361,8 +367,11 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="mx7-yn-xAR" eventType="touchUpInside" id="U5q-tI-3zu"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lhn-rC-t2Z">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lhn-rC-t2Z">
                                 <rect key="frame" x="48" y="288" width="224" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
@@ -370,8 +379,11 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="mx7-yn-xAR" eventType="touchUpInside" id="3vz-zc-cXn"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kmx-Lo-8GH">
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kmx-Lo-8GH">
                                 <rect key="frame" x="68" y="338" width="184" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
@@ -379,8 +391,11 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="mx7-yn-xAR" eventType="touchUpInside" id="45w-lR-juk"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fi6-Ca-xoV">
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fi6-Ca-xoV">
                                 <rect key="frame" x="46" y="388" width="228" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
@@ -388,6 +403,9 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="mx7-yn-xAR" eventType="touchUpInside" id="dBB-1O-kMa"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -401,10 +419,10 @@
             </objects>
             <point key="canvasLocation" x="2224" y="62"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="gXs-yq-epC">
             <objects>
-                <viewController id="EQD-gp-CCP" sceneMemberID="viewController">
+                <viewController id="EQD-gp-CCP" customClass="DetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cHG-ZY-6gy"/>
                         <viewControllerLayoutGuide type="bottom" id="eBc-wM-H8c"/>
@@ -412,9 +430,37 @@
                     <view key="view" contentMode="scaleToFill" id="dca-7w-lOd">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="English" translatesAutoresizingMaskIntoConstraints="NO" id="wre-ag-wH8">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="308"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ixs-jh-P4E">
+                                <rect key="frame" x="0.0" y="316" width="320" height="252"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <mutableString key="text">Language is functional as it is used to make and exchange meanings influenced by social and cultural contexts. Locally, the English language is used to facilitate communication and bonding among the different ethnic and cultural groups. Globally, it allows Singaporeans to participate actively and effectively in a knowledge-based economy where it is the lingua franca of the Internet, of science and technology, and of world economy.
+
+Learning Outcomes
+
+At the end of four years, a SST graduate who has mastered the English Language will be able to:
+
+Communicate fluently and effectively using appropriate text types to achieve the purpose, context, culture and audience intended
+Employ critical and creative thinking skills in evaluating arguments and opinions and generating ideas
+Appreciate the nuances in language as used by writers in varying texts
+Understand the relationships between ideas within and across disciplines
+Use Information and Communication Technology actively and purposefully to facilitate the understanding, learning and use of the English Language.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="tL5-YD-L09"/>
+                    <connections>
+                        <outlet property="imageView" destination="wre-ag-wH8" id="xXh-6Q-SvP"/>
+                        <outlet property="textView" destination="Ixs-jh-P4E" id="whz-r5-Dl9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g3Y-bL-81o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -825,6 +871,7 @@
         <image name="Button" width="500" height="250"/>
         <image name="CurriculumBg" width="206" height="360"/>
         <image name="Cyber" width="325" height="194"/>
+        <image name="English" width="423" height="230"/>
         <image name="Exhibition" width="250" height="250"/>
         <image name="ExhibitionSelected" width="250" height="250"/>
         <image name="Facebook" width="500" height="500"/>
@@ -833,7 +880,7 @@
         <image name="Info" width="250" height="250"/>
         <image name="InfoSelected" width="250" height="250"/>
         <image name="MainBlur" width="320" height="568"/>
-        <image name="SSTLOGO" width="640" height="400"/>
+        <image name="SSTLOGO" width="320" height="200"/>
         <image name="StatiX" width="512" height="512"/>
         <image name="Twitter" width="500" height="500"/>
         <image name="TwitterSelected" width="500" height="500"/>
