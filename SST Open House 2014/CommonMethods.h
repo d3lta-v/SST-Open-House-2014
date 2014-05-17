@@ -17,4 +17,6 @@
 +(void)labelAnimateEaseIn:(UILabel *)label delegate:(id)delegate timeTaken:(NSTimeInterval)duration completionBlock:(void (^)(BOOL))block;
 +(UIInterpolatingMotionEffect *)getInterpolatingMotionEffect:(NSString *)type minMaxValues:(NSInteger)minMaxValues;
 
++(void)viewAnimateEaseIn:(UIView *)view delegate:(id)delegate timeTaken:(NSTimeInterval)duration completionBlock:(void (^)(BOOL))block;
+
 @end

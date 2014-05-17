@@ -7,12 +7,15 @@
 //
 
 #import "CurriculumViewController.h"
+#import "CommonMethods.h"
 
 @interface CurriculumViewController ()
 
 @end
 
 @implementation CurriculumViewController
+
+@synthesize academic, applied, ccas;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,6 +30,19 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage new]
+                                                  forBarMetrics:UIBarMetricsDefault];
+    self.navigationController.navigationBar.shadowImage = [UIImage new];
+    self.navigationController.navigationBar.translucent = YES;
+    self.navigationController.view.backgroundColor = [UIColor clearColor];
+    
+    // Implement parallax
+    UIMotionEffectGroup *group = [UIMotionEffectGroup new];
+    group.motionEffects = @[[CommonMethods getInterpolatingMotionEffect:@"center.x" minMaxValues:-10], [CommonMethods getInterpolatingMotionEffect:@"center.y" minMaxValues:-10]];
+    [academic addMotionEffect:group];
+    [applied addMotionEffect:group];
+    [ccas addMotionEffect:group];
 }
 
 - (void)didReceiveMemoryWarning
@@ -45,5 +61,19 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (IBAction)gotoAcademic:(id)sender {
+    
+}
+
+- (IBAction)gotoApplied:(id)sender {
+    
+}
+- (IBAction)gotoCCAs:(id)sender {
+}
+
+- (IBAction)goBack:(id)sender {
+    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+}
 
 @end

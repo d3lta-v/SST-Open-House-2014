@@ -48,4 +48,12 @@
     return motionEffect;
 }
 
++(void)viewAnimateEaseIn:(UIView *)view delegate:(id)delegate timeTaken:(NSTimeInterval)duration completionBlock:(void (^)(BOOL))block
+{
+    [UIView setAnimationDelegate:delegate];
+    [UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
+    
+    [UIView animateWithDuration:duration animations:^{view.alpha=1;} completion:block];
+}
+
 @end

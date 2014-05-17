@@ -88,7 +88,6 @@
 
 -(IBAction)exitNavigationVC:(id)sender
 {
-    [[UIApplication sharedApplication] setStatusBarHidden:YES];
     [self.navigationController dismissViewControllerAnimated:YES completion:nil];
 }
 

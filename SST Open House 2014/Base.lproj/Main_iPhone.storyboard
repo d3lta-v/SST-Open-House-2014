@@ -143,6 +143,19 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="SSTLogo" destination="B8a-gf-2e0" id="TfJ-QN-sOb"/>
+                        <outlet property="activities" destination="yqD-Di-etE" id="LGm-dx-owq"/>
+                        <outlet property="arrow1" destination="18F-dD-cx2" id="Sd2-JB-fck"/>
+                        <outlet property="arrow2" destination="LRb-DN-ehK" id="Mks-ga-m8P"/>
+                        <outlet property="curriculum" destination="fiz-sO-7lZ" id="Y1F-AB-2yy"/>
+                        <outlet property="exhibition" destination="ghr-8D-NK5" id="neq-C1-dzl"/>
+                        <outlet property="facebook" destination="dLm-7i-AIq" id="ImG-q4-9LE"/>
+                        <outlet property="gettingStarted" destination="HzB-Ys-kQU" id="fbk-4e-oIu"/>
+                        <outlet property="info" destination="0V3-5B-pXh" id="zJ7-hQ-DaC"/>
+                        <outlet property="maps" destination="bsv-7s-vSr" id="8us-kz-3S8"/>
+                        <outlet property="swipeUp" destination="ONS-xk-TTp" id="btm-hr-0Yk"/>
+                        <outlet property="twitter" destination="0l4-mD-hvV" id="WSN-hU-KlU"/>
+                        <outlet property="website" destination="Ze2-NV-Hme" id="824-QK-vGu"/>
                         <segue destination="F3o-ku-vdh" kind="modal" identifier="gotoAbout" id="oBt-bm-0gO"/>
                         <segue destination="L3U-8g-Kbe" kind="modal" identifier="gotoWeb" id="52v-Ky-2Ql"/>
                     </connections>
@@ -192,13 +205,220 @@
                     <view key="view" contentMode="scaleToFill" id="QGm-Sl-77t">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CurriculumBg" translatesAutoresizingMaskIntoConstraints="NO" id="LFp-iH-ekV">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9a-T4-iO8">
+                                <rect key="frame" x="54" y="224" width="213" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
+                                <state key="normal" title="Academic Subjects">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="gotoAcademic:" destination="Xcl-ew-Bxq" eventType="touchUpInside" id="Fdx-QD-VNx"/>
+                                    <segue destination="mx7-yn-xAR" kind="push" id="yb5-P2-Pht"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mfb-0f-Pd9">
+                                <rect key="frame" x="61" y="269" width="199" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
+                                <state key="normal" title="Applied Subjects">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="gotoApplied:" destination="Xcl-ew-Bxq" eventType="touchUpInside" id="trQ-AD-6Mf"/>
+                                    <segue destination="urE-mn-vSF" kind="push" id="iph-Bc-r4t"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UmL-gA-lls">
+                                <rect key="frame" x="129" y="307" width="62" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
+                                <state key="normal" title="CCAs">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="gotoCCAs:" destination="Xcl-ew-Bxq" eventType="touchUpInside" id="PFz-10-6sk"/>
+                                    <segue destination="WyZ-b3-sy7" kind="push" id="eQ0-nP-Fy1"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="zsr-zh-yOE"/>
+                    <navigationItem key="navigationItem" id="zsr-zh-yOE">
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="N00-fP-S1p">
+                            <connections>
+                                <action selector="goBack:" destination="Xcl-ew-Bxq" id="yNE-FW-VR3"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="academic" destination="d9a-T4-iO8" id="1C0-c8-fOM"/>
+                        <outlet property="applied" destination="Mfb-0f-Pd9" id="LyM-Bg-wrK"/>
+                        <outlet property="ccas" destination="UmL-gA-lls" id="7LG-Cs-0gz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mDJ-hN-cqb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1261" y="846"/>
+            <point key="canvasLocation" x="1689" y="846"/>
+        </scene>
+        <!--View Controller - Applied Subjects-->
+        <scene sceneID="bdZ-FF-LHd">
+            <objects>
+                <viewController id="urE-mn-vSF" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="c2S-Qi-9O5"/>
+                        <viewControllerLayoutGuide type="bottom" id="YXa-ON-Ejd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lT9-z5-YgN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CurriculumBg" translatesAutoresizingMaskIntoConstraints="NO" id="HKh-Cj-PZm">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Applied Subjects" id="978-vY-Y69"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lIb-kq-4cm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2224" y="846"/>
+        </scene>
+        <!--View Controller - CCAs-->
+        <scene sceneID="JPh-wV-hf0">
+            <objects>
+                <viewController id="WyZ-b3-sy7" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eN0-WY-ZUf"/>
+                        <viewControllerLayoutGuide type="bottom" id="3zF-vf-7SB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jnY-of-OC1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s9c-G6-qfc">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="CCAs" id="WPC-Hy-xhN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wWp-hx-Mgy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2224" y="1652"/>
+        </scene>
+        <!--View Controller - Academic Subjects-->
+        <scene sceneID="tNI-wj-rB2">
+            <objects>
+                <viewController id="mx7-yn-xAR" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="H2G-Yv-zl6"/>
+                        <viewControllerLayoutGuide type="bottom" id="xyT-vP-qWN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DaD-l8-HQB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CurriculumBg" translatesAutoresizingMaskIntoConstraints="NO" id="pst-ab-kd4">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uyC-0m-kII">
+                                <rect key="frame" x="121" y="138" width="79" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
+                                <state key="normal" title="English">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="24W-iT-bzc">
+                                <rect key="frame" x="93" y="188" width="134" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
+                                <state key="normal" title="Mathematics">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MHT-0n-XmW">
+                                <rect key="frame" x="75" y="238" width="170" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
+                                <state key="normal" title="Applied Science">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lhn-rC-t2Z">
+                                <rect key="frame" x="48" y="288" width="224" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
+                                <state key="normal" title="Integrated Humanities">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kmx-Lo-8GH">
+                                <rect key="frame" x="68" y="338" width="184" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
+                                <state key="normal" title="Research Studies">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fi6-Ca-xoV">
+                                <rect key="frame" x="46" y="388" width="228" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
+                                <state key="normal" title="Infocomm Technology">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Academic Subjects" id="GRc-Eo-crq"/>
+                    <connections>
+                        <segue destination="EQD-gp-CCP" kind="push" identifier="gotoDetail" id="79P-uL-gVb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q49-Mf-e3c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2224" y="62"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="gXs-yq-epC">
+            <objects>
+                <viewController id="EQD-gp-CCP" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cHG-ZY-6gy"/>
+                        <viewControllerLayoutGuide type="bottom" id="eBc-wM-H8c"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dca-7w-lOd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="tL5-YD-L09"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g3Y-bL-81o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2688" y="62"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="GqJ-lL-zWi">
@@ -603,6 +823,7 @@
         <image name="AboutBg" width="177" height="314"/>
         <image name="Arrow" width="128" height="128"/>
         <image name="Button" width="500" height="250"/>
+        <image name="CurriculumBg" width="206" height="360"/>
         <image name="Cyber" width="325" height="194"/>
         <image name="Exhibition" width="250" height="250"/>
         <image name="ExhibitionSelected" width="250" height="250"/>
