@@ -12,12 +12,7 @@
 
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *buttons;
 
-- (IBAction)handsOn:(id)sender;
-- (IBAction)educamp:(id)sender;
-- (IBAction)principal:(id)sender;
-- (IBAction)studentPanel:(id)sender;
-- (IBAction)dsa:(id)sender;
-
+- (IBAction)buttonTapped:(id)sender;
 - (IBAction)goBack:(id)sender;
 
 @end

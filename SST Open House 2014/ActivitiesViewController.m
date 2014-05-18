@@ -10,7 +10,12 @@
 #import "ActivitiesDetailViewController.h"
 #import "CommonMethods.h"
 
+static const float_t kAnimationTime = 0.4;
+
 @interface ActivitiesViewController ()
+{
+    NSUInteger identifier;
+}
 
 @end
 
@@ -38,6 +43,29 @@
     for (UIButton *button in buttons) {
         [button addMotionEffect:group];
     }
+    
+    // Initiate animation
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        // set all alpha to zero
+        for (UIButton *button in buttons) {
+            button.alpha=0;
+        }
+        [self startFadeInAnimation];
+    });
+}
+
+-(void)startFadeInAnimation
+{
+    [CommonMethods viewAnimateEaseIn:[buttons objectAtIndex:0] delegate:self timeTaken:kAnimationTime completionBlock:^(BOOL finished){
+        [CommonMethods viewAnimateEaseIn:[buttons objectAtIndex:1] delegate:self timeTaken:kAnimationTime completionBlock:^(BOOL finished){
+            [CommonMethods viewAnimateEaseIn:[buttons objectAtIndex:2] delegate:self timeTaken:kAnimationTime completionBlock:^(BOOL finished){
+                [CommonMethods viewAnimateEaseIn:[buttons objectAtIndex:3] delegate:self timeTaken:kAnimationTime completionBlock:^(BOOL finished){
+                    [CommonMethods viewAnimateEaseIn:[buttons objectAtIndex:4] delegate:nil timeTaken:kAnimationTime completionBlock:nil];
+                }];
+            }];
+        }];
+    }];
 }
 
 - (void)didReceiveMemoryWarning
@@ -54,25 +82,19 @@
 {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    if ([[segue identifier] isEqualToString:@"gotoActivitiesDetail"]) {
+        [[segue destinationViewController] setIdentifier:identifier];
+    }
 }
 
-
-- (IBAction)handsOn:(id)sender {
+- (IBAction)buttonTapped:(id)sender
+{
+    identifier=[sender tag];
+    [self performSegueWithIdentifier:@"gotoActivitiesDetail" sender:self];
 }
 
-- (IBAction)educamp:(id)sender {
-}
-
-- (IBAction)principal:(id)sender {
-}
-
-- (IBAction)studentPanel:(id)sender {
-}
-
-- (IBAction)dsa:(id)sender {
-}
-
-- (IBAction)goBack:(id)sender {
+- (IBAction)goBack:(id)sender
+{
     [self.navigationController dismissViewControllerAnimated:YES completion:nil];
 }
 
