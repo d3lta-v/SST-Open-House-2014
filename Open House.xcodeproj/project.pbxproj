@@ -42,6 +42,7 @@
 		22AB069319260F5400AE3670 /* Maps3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AB069219260F5400AE3670 /* Maps3ViewController.m */; };
 		22E9338F19284B92004167D3 /* ActivitiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E9338E19284B92004167D3 /* ActivitiesViewController.m */; };
 		22E9339219285A3B004167D3 /* ActivitiesDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E9339119285A3B004167D3 /* ActivitiesDetailViewController.m */; };
+		22E9339419287DBD004167D3 /* Main_iPhone4.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22E9339319287DBD004167D3 /* Main_iPhone4.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +116,7 @@
 		22E9338E19284B92004167D3 /* ActivitiesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivitiesViewController.m; sourceTree = "<group>"; };
 		22E9339019285A3B004167D3 /* ActivitiesDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivitiesDetailViewController.h; sourceTree = "<group>"; };
 		22E9339119285A3B004167D3 /* ActivitiesDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivitiesDetailViewController.m; sourceTree = "<group>"; };
+		22E9339319287DBD004167D3 /* Main_iPhone4.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPhone4.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +197,7 @@
 				22AB066C1924EEDC00AE3670 /* CommonMethods.h */,
 				22AB066D1924EEDC00AE3670 /* CommonMethods.m */,
 				22AB06391924C26600AE3670 /* Main_iPhone.storyboard */,
+				22E9339319287DBD004167D3 /* Main_iPhone4.storyboard */,
 				22AB063C1924C26600AE3670 /* Main_iPad.storyboard */,
 				22AB063F1924C26600AE3670 /* ViewController.h */,
 				22AB06401924C26600AE3670 /* ViewController.m */,
@@ -378,6 +381,7 @@
 				22AB06691924E5BB00AE3670 /* SVProgressHUD.bundle in Resources */,
 				22AB063E1924C26600AE3670 /* Main_iPad.storyboard in Resources */,
 				22AB06431924C26600AE3670 /* Images.xcassets in Resources */,
+				22E9339419287DBD004167D3 /* Main_iPhone4.storyboard in Resources */,
 				22AB063B1924C26600AE3670 /* Main_iPhone.storyboard in Resources */,
 				22AB06321924C26600AE3670 /* InfoPlist.strings in Resources */,
 			);

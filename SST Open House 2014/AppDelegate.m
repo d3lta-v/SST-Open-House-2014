@@ -18,6 +18,38 @@
     //[UINavigationBar appearance].tintColor = [UIColor whiteColor];
     //[[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor whiteColor]}];
     
+    // Auto-storyboard
+    if ([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPhone)
+    {
+        CGSize iOSDeviceScreenSize = [[UIScreen mainScreen] bounds].size;
+        
+        if (iOSDeviceScreenSize.height == 480)
+        {
+            UIStoryboard *iPhone35Storyboard = [UIStoryboard storyboardWithName:@"Main_iPhone4" bundle:nil];
+            UIViewController *initialViewController = [iPhone35Storyboard instantiateInitialViewController];
+            self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+            self.window.rootViewController  = initialViewController;
+            [self.window makeKeyAndVisible];
+        }
+        
+        if (iOSDeviceScreenSize.height == 568)
+        {
+            UIStoryboard *iPhone4Storyboard = [UIStoryboard storyboardWithName:@"Main_iPhone" bundle:nil];
+            UIViewController *initialViewController = [iPhone4Storyboard instantiateInitialViewController];
+            self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+            self.window.rootViewController  = initialViewController;
+            [self.window makeKeyAndVisible];
+        }
+        
+    } else if ([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad)
+    {
+        UIStoryboard *iPad = [UIStoryboard storyboardWithName:@"Main_iPad" bundle:nil];
+        UIViewController *initialViewController = [iPad instantiateInitialViewController];
+        self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+        self.window.rootViewController  = initialViewController;
+        [self.window makeKeyAndVisible];
+    }
+    
     return YES;
 }
 							
