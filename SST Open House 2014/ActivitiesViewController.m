@@ -57,15 +57,17 @@ static const float_t kAnimationTime = 0.4;
 
 -(void)startFadeInAnimation
 {
-    [CommonMethods viewAnimateEaseIn:[buttons objectAtIndex:0] delegate:self timeTaken:kAnimationTime completionBlock:^(BOOL finished){
-        [CommonMethods viewAnimateEaseIn:[buttons objectAtIndex:1] delegate:self timeTaken:kAnimationTime completionBlock:^(BOOL finished){
-            [CommonMethods viewAnimateEaseIn:[buttons objectAtIndex:2] delegate:self timeTaken:kAnimationTime completionBlock:^(BOOL finished){
-                [CommonMethods viewAnimateEaseIn:[buttons objectAtIndex:3] delegate:self timeTaken:kAnimationTime completionBlock:^(BOOL finished){
-                    [CommonMethods viewAnimateEaseIn:[buttons objectAtIndex:4] delegate:nil timeTaken:kAnimationTime completionBlock:nil];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(kAnimationTime * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [CommonMethods viewAnimateEaseIn:[buttons objectAtIndex:0] delegate:self timeTaken:kAnimationTime completionBlock:^(BOOL finished){
+            [CommonMethods viewAnimateEaseIn:[buttons objectAtIndex:1] delegate:self timeTaken:kAnimationTime completionBlock:^(BOOL finished){
+                [CommonMethods viewAnimateEaseIn:[buttons objectAtIndex:2] delegate:self timeTaken:kAnimationTime completionBlock:^(BOOL finished){
+                    [CommonMethods viewAnimateEaseIn:[buttons objectAtIndex:3] delegate:self timeTaken:kAnimationTime completionBlock:^(BOOL finished){
+                        [CommonMethods viewAnimateEaseIn:[buttons objectAtIndex:4] delegate:nil timeTaken:kAnimationTime completionBlock:nil];
+                    }];
                 }];
             }];
         }];
-    }];
+    });
 }
 
 - (void)didReceiveMemoryWarning

@@ -76,7 +76,7 @@
         
         _textView.text=@"The emergence of modern technology has forever changed the way we live, learn, work and play. Information and Communication Technology (ICT) is a leveller of the playing field for many in education, businesses, entertainment and politics, and as such, its effective and efficient use is of great importance for all students, especially SST students with their 1:1 learning devices.  Explicit instruction in ICT knowledge and skills must therefore be a part of the school curriculum for our students.\n\nLearning Outcomes\n\nStudents will be able to:\n\nUse their learning devices and multimedia software effectively to enhance and extend their learning in all subject areas.\nUtilise online tools for communication, learning and programming\nProgram in languages such as C++ and Objective-C";
         _imageView.image = [self imageByScalingAndCroppingForSize:CGSizeMake(640, 480) withImage:[UIImage imageNamed:@"ICT"]];
-        self.title=@"Infocomm";
+        self.title=@"Infocomm Tech";
     }
     _textView.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
     _textView.textContainerInset = UIEdgeInsetsMake(10, 10, 10, 10);
