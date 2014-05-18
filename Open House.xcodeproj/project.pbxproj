@@ -43,6 +43,7 @@
 		22E9338F19284B92004167D3 /* ActivitiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E9338E19284B92004167D3 /* ActivitiesViewController.m */; };
 		22E9339219285A3B004167D3 /* ActivitiesDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E9339119285A3B004167D3 /* ActivitiesDetailViewController.m */; };
 		22E9339519287FB0004167D3 /* Main_iPhone4.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22E9339719287FB0004167D3 /* Main_iPhone4.storyboard */; };
+		22E9339B1928DAAD004167D3 /* SportsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E9339A1928DAAD004167D3 /* SportsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +118,8 @@
 		22E9339019285A3B004167D3 /* ActivitiesDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivitiesDetailViewController.h; sourceTree = "<group>"; };
 		22E9339119285A3B004167D3 /* ActivitiesDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivitiesDetailViewController.m; sourceTree = "<group>"; };
 		22E9339619287FB0004167D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone4.storyboard; sourceTree = "<group>"; };
+		22E933991928DAAD004167D3 /* SportsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SportsViewController.h; sourceTree = "<group>"; };
+		22E9339A1928DAAD004167D3 /* SportsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SportsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +218,7 @@
 				22E9339119285A3B004167D3 /* ActivitiesDetailViewController.m */,
 				2262FCB719279FD300B018F2 /* UIImage-Extensions.h */,
 				2262FCB819279FD300B018F2 /* UIImage-Extensions.m */,
+				22E933981928DA94004167D3 /* CCAs */,
 				2262FCA919277B1500B018F2 /* SubjectVCs */,
 				22AB068A19260F3A00AE3670 /* Maps */,
 				22AB06421924C26600AE3670 /* Images.xcassets */,
@@ -297,6 +301,15 @@
 				22AB069219260F5400AE3670 /* Maps3ViewController.m */,
 			);
 			path = Maps;
+			sourceTree = "<group>";
+		};
+		22E933981928DA94004167D3 /* CCAs */ = {
+			isa = PBXGroup;
+			children = (
+				22E933991928DAAD004167D3 /* SportsViewController.h */,
+				22E9339A1928DAAD004167D3 /* SportsViewController.m */,
+			);
+			path = CCAs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -410,6 +423,7 @@
 				2262FCB219277E9600B018F2 /* CCAViewController.m in Sources */,
 				22AB06411924C26600AE3670 /* ViewController.m in Sources */,
 				22AB066E1924EEDC00AE3670 /* CommonMethods.m in Sources */,
+				22E9339B1928DAAD004167D3 /* SportsViewController.m in Sources */,
 				22E9339219285A3B004167D3 /* ActivitiesDetailViewController.m in Sources */,
 				22E9338F19284B92004167D3 /* ActivitiesViewController.m in Sources */,
 				22AB066A1924E5BB00AE3670 /* SVProgressHUD.m in Sources */,

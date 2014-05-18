@@ -10,4 +10,6 @@
 
 @interface CCAViewController : UIViewController
 
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *buttons;
+
 @end

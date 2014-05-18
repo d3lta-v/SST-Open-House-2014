@@ -7,12 +7,17 @@
 //
 
 #import "CCAViewController.h"
+#import "CommonMethods.h"
+
+static const float_t kAnimationTime = 0.6;
 
 @interface CCAViewController ()
 
 @end
 
 @implementation CCAViewController
+
+@synthesize buttons;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,6 +32,32 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    // Implement parallax
+    UIMotionEffectGroup *group = [UIMotionEffectGroup new];
+    group.motionEffects = @[[CommonMethods getInterpolatingMotionEffect:@"center.x" minMaxValues:-10], [CommonMethods getInterpolatingMotionEffect:@"center.y" minMaxValues:-10]];
+    for (UIButton *button in buttons) {
+        [button addMotionEffect:group];
+    }
+    
+    // Implement fade in animation
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        // set all alpha to zero
+        for (UIButton *button in buttons) {
+            button.alpha=0;
+        }
+        [self startFadeInAnimation];
+    });
+}
+
+-(void)startFadeInAnimation
+{
+    [CommonMethods viewAnimateEaseIn:[buttons objectAtIndex:0] delegate:self timeTaken:kAnimationTime completionBlock:^(BOOL finished){
+        [CommonMethods viewAnimateEaseIn:[buttons objectAtIndex:1] delegate:self timeTaken:kAnimationTime completionBlock:^(BOOL finished){
+            [CommonMethods viewAnimateEaseIn:[buttons objectAtIndex:2] delegate:nil timeTaken:kAnimationTime completionBlock:nil];
+        }];
+    }];
 }
 
 - (void)didReceiveMemoryWarning
