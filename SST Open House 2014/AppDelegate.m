@@ -25,7 +25,7 @@
         
         if (iOSDeviceScreenSize.height == 480)
         {
-            UIStoryboard *iPhone35Storyboard = [UIStoryboard storyboardWithName:@"Main_iPhone4" bundle:nil];
+            UIStoryboard *iPhone35Storyboard = [UIStoryboard storyboardWithName:@"Base.lproj/Main_iPhone4" bundle:nil];
             UIViewController *initialViewController = [iPhone35Storyboard instantiateInitialViewController];
             self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
             self.window.rootViewController  = initialViewController;
