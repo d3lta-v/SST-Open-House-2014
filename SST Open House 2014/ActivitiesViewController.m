@@ -1,23 +1,22 @@
 //
-//  CurriculumViewController.m
+//  ActivitiesViewController.m
 //  Open House
 //
-//  Created by Pan Ziyue on 17/5/14.
+//  Created by Pan Ziyue on 18/5/14.
 //  Copyright (c) 2014 Cyber Inc & StatiX Industries. All rights reserved.
 //
 
-#import "CurriculumViewController.h"
+#import "ActivitiesViewController.h"
+#import "ActivitiesDetailViewController.h"
 #import "CommonMethods.h"
 
-static const float_t kAnimationTime = 0.55;
-
-@interface CurriculumViewController ()
+@interface ActivitiesViewController ()
 
 @end
 
-@implementation CurriculumViewController
+@implementation ActivitiesViewController
 
-@synthesize academic, applied, ccas;
+@synthesize buttons;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -36,29 +35,9 @@ static const float_t kAnimationTime = 0.55;
     // Implement parallax
     UIMotionEffectGroup *group = [UIMotionEffectGroup new];
     group.motionEffects = @[[CommonMethods getInterpolatingMotionEffect:@"center.x" minMaxValues:-10], [CommonMethods getInterpolatingMotionEffect:@"center.y" minMaxValues:-10]];
-    [academic addMotionEffect:group];
-    [applied addMotionEffect:group];
-    [ccas addMotionEffect:group];
-    
-    // Initiate fade in animation
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        // Set all alpha to zero
-        academic.alpha=0;
-        applied.alpha=0;
-        ccas.alpha=0;
-        
-        [self startFadeInAnimation];
-    });
-}
-
--(void)startFadeInAnimation
-{
-    [CommonMethods viewAnimateEaseIn:academic delegate:self timeTaken:kAnimationTime completionBlock:^(BOOL finished){
-        [CommonMethods viewAnimateEaseIn:applied delegate:self timeTaken:kAnimationTime completionBlock:^(BOOL finished){
-            [CommonMethods viewAnimateEaseIn:ccas delegate:nil timeTaken:kAnimationTime completionBlock:nil];
-        }];
-    }];
+    for (UIButton *button in buttons) {
+        [button addMotionEffect:group];
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -78,14 +57,19 @@ static const float_t kAnimationTime = 0.55;
 }
 
 
-- (IBAction)gotoAcademic:(id)sender {
-    
+- (IBAction)handsOn:(id)sender {
 }
 
-- (IBAction)gotoApplied:(id)sender {
-    
+- (IBAction)educamp:(id)sender {
 }
-- (IBAction)gotoCCAs:(id)sender {
+
+- (IBAction)principal:(id)sender {
+}
+
+- (IBAction)studentPanel:(id)sender {
+}
+
+- (IBAction)dsa:(id)sender {
 }
 
 - (IBAction)goBack:(id)sender {

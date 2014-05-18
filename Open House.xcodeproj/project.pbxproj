@@ -40,6 +40,8 @@
 		22AB068D19260F4800AE3670 /* Maps1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AB068C19260F4800AE3670 /* Maps1ViewController.m */; };
 		22AB069019260F4E00AE3670 /* Maps2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AB068F19260F4E00AE3670 /* Maps2ViewController.m */; };
 		22AB069319260F5400AE3670 /* Maps3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AB069219260F5400AE3670 /* Maps3ViewController.m */; };
+		22E9338F19284B92004167D3 /* ActivitiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E9338E19284B92004167D3 /* ActivitiesViewController.m */; };
+		22E9339219285A3B004167D3 /* ActivitiesDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E9339119285A3B004167D3 /* ActivitiesDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +111,10 @@
 		22AB068F19260F4E00AE3670 /* Maps2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Maps2ViewController.m; sourceTree = "<group>"; };
 		22AB069119260F5400AE3670 /* Maps3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Maps3ViewController.h; sourceTree = "<group>"; };
 		22AB069219260F5400AE3670 /* Maps3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Maps3ViewController.m; sourceTree = "<group>"; };
+		22E9338D19284B92004167D3 /* ActivitiesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivitiesViewController.h; sourceTree = "<group>"; };
+		22E9338E19284B92004167D3 /* ActivitiesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivitiesViewController.m; sourceTree = "<group>"; };
+		22E9339019285A3B004167D3 /* ActivitiesDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivitiesDetailViewController.h; sourceTree = "<group>"; };
+		22E9339119285A3B004167D3 /* ActivitiesDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivitiesDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +206,10 @@
 				22AB06861925E24A00AE3670 /* WebViewController.m */,
 				22325014192716D100E634E0 /* CurriculumViewController.h */,
 				22325015192716D100E634E0 /* CurriculumViewController.m */,
+				22E9338D19284B92004167D3 /* ActivitiesViewController.h */,
+				22E9338E19284B92004167D3 /* ActivitiesViewController.m */,
+				22E9339019285A3B004167D3 /* ActivitiesDetailViewController.h */,
+				22E9339119285A3B004167D3 /* ActivitiesDetailViewController.m */,
 				2262FCB719279FD300B018F2 /* UIImage-Extensions.h */,
 				2262FCB819279FD300B018F2 /* UIImage-Extensions.m */,
 				2262FCA919277B1500B018F2 /* SubjectVCs */,
@@ -396,6 +406,8 @@
 				2262FCB219277E9600B018F2 /* CCAViewController.m in Sources */,
 				22AB06411924C26600AE3670 /* ViewController.m in Sources */,
 				22AB066E1924EEDC00AE3670 /* CommonMethods.m in Sources */,
+				22E9339219285A3B004167D3 /* ActivitiesDetailViewController.m in Sources */,
+				22E9338F19284B92004167D3 /* ActivitiesViewController.m in Sources */,
 				22AB066A1924E5BB00AE3670 /* SVProgressHUD.m in Sources */,
 				22AB06381924C26600AE3670 /* AppDelegate.m in Sources */,
 				2262FCB519277F3E00B018F2 /* DetailViewController.m in Sources */,
