@@ -44,6 +44,11 @@
 		22E9339219285A3B004167D3 /* ActivitiesDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E9339119285A3B004167D3 /* ActivitiesDetailViewController.m */; };
 		22E9339519287FB0004167D3 /* Main_iPhone4.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22E9339719287FB0004167D3 /* Main_iPhone4.storyboard */; };
 		22E9339B1928DAAD004167D3 /* SportsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E9339A1928DAAD004167D3 /* SportsViewController.m */; };
+		22E933A41929B103004167D3 /* CRMotionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E933A11929B103004167D3 /* CRMotionView.m */; };
+		22E933A51929B103004167D3 /* UIScrollView+CRScrollIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E933A31929B103004167D3 /* UIScrollView+CRScrollIndicator.m */; };
+		22E933A81929B12C004167D3 /* CCADetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E933A71929B12C004167D3 /* CCADetailsViewController.m */; };
+		22E933AA1929B15D004167D3 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22E933A91929B15D004167D3 /* CoreMotion.framework */; };
+		22E933AD192A3553004167D3 /* ClubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E933AC192A3553004167D3 /* ClubViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +125,15 @@
 		22E9339619287FB0004167D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone4.storyboard; sourceTree = "<group>"; };
 		22E933991928DAAD004167D3 /* SportsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SportsViewController.h; sourceTree = "<group>"; };
 		22E9339A1928DAAD004167D3 /* SportsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SportsViewController.m; sourceTree = "<group>"; };
+		22E933A01929B103004167D3 /* CRMotionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRMotionView.h; sourceTree = "<group>"; };
+		22E933A11929B103004167D3 /* CRMotionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRMotionView.m; sourceTree = "<group>"; };
+		22E933A21929B103004167D3 /* UIScrollView+CRScrollIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+CRScrollIndicator.h"; sourceTree = "<group>"; };
+		22E933A31929B103004167D3 /* UIScrollView+CRScrollIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+CRScrollIndicator.m"; sourceTree = "<group>"; };
+		22E933A61929B12C004167D3 /* CCADetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCADetailsViewController.h; sourceTree = "<group>"; };
+		22E933A71929B12C004167D3 /* CCADetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCADetailsViewController.m; sourceTree = "<group>"; };
+		22E933A91929B15D004167D3 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		22E933AB192A3553004167D3 /* ClubViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClubViewController.h; sourceTree = "<group>"; };
+		22E933AC192A3553004167D3 /* ClubViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClubViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +141,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22E933AA1929B15D004167D3 /* CoreMotion.framework in Frameworks */,
 				22AB062A1924C26600AE3670 /* CoreGraphics.framework in Frameworks */,
 				22AB062C1924C26600AE3670 /* UIKit.framework in Frameworks */,
 				22AB06281924C26600AE3670 /* Foundation.framework in Frameworks */,
@@ -184,6 +199,7 @@
 		22AB06261924C26600AE3670 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				22E933A91929B15D004167D3 /* CoreMotion.framework */,
 				22AB06271924C26600AE3670 /* Foundation.framework */,
 				22AB06291924C26600AE3670 /* CoreGraphics.framework */,
 				22AB062B1924C26600AE3670 /* UIKit.framework */,
@@ -259,6 +275,7 @@
 		22AB06611924E5BB00AE3670 /* Externals */ = {
 			isa = PBXGroup;
 			children = (
+				22E9339F1929B103004167D3 /* CRMotionView */,
 				22AB067E1925E19F00AE3670 /* NJKWebViewProgress */,
 				22AB06621924E5BB00AE3670 /* SVProgressHUD */,
 			);
@@ -308,8 +325,23 @@
 			children = (
 				22E933991928DAAD004167D3 /* SportsViewController.h */,
 				22E9339A1928DAAD004167D3 /* SportsViewController.m */,
+				22E933AB192A3553004167D3 /* ClubViewController.h */,
+				22E933AC192A3553004167D3 /* ClubViewController.m */,
+				22E933A61929B12C004167D3 /* CCADetailsViewController.h */,
+				22E933A71929B12C004167D3 /* CCADetailsViewController.m */,
 			);
 			path = CCAs;
+			sourceTree = "<group>";
+		};
+		22E9339F1929B103004167D3 /* CRMotionView */ = {
+			isa = PBXGroup;
+			children = (
+				22E933A01929B103004167D3 /* CRMotionView.h */,
+				22E933A11929B103004167D3 /* CRMotionView.m */,
+				22E933A21929B103004167D3 /* UIScrollView+CRScrollIndicator.h */,
+				22E933A31929B103004167D3 /* UIScrollView+CRScrollIndicator.m */,
+			);
+			path = CRMotionView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -423,13 +455,16 @@
 				2262FCB219277E9600B018F2 /* CCAViewController.m in Sources */,
 				22AB06411924C26600AE3670 /* ViewController.m in Sources */,
 				22AB066E1924EEDC00AE3670 /* CommonMethods.m in Sources */,
+				22E933A81929B12C004167D3 /* CCADetailsViewController.m in Sources */,
 				22E9339B1928DAAD004167D3 /* SportsViewController.m in Sources */,
 				22E9339219285A3B004167D3 /* ActivitiesDetailViewController.m in Sources */,
 				22E9338F19284B92004167D3 /* ActivitiesViewController.m in Sources */,
+				22E933AD192A3553004167D3 /* ClubViewController.m in Sources */,
 				22AB066A1924E5BB00AE3670 /* SVProgressHUD.m in Sources */,
 				22AB06381924C26600AE3670 /* AppDelegate.m in Sources */,
 				2262FCB519277F3E00B018F2 /* DetailViewController.m in Sources */,
 				223250131926624A00E634E0 /* GettingStartedViewController.m in Sources */,
+				22E933A41929B103004167D3 /* CRMotionView.m in Sources */,
 				2262FCAC19277B3700B018F2 /* AcademicViewController.m in Sources */,
 				22AB06341924C26600AE3670 /* main.m in Sources */,
 				2262FCAF19277E8E00B018F2 /* AppliedViewController.m in Sources */,
@@ -437,6 +472,7 @@
 				22AB06841925E19F00AE3670 /* NJKWebViewProgressView.m in Sources */,
 				22AB069319260F5400AE3670 /* Maps3ViewController.m in Sources */,
 				22AB069019260F4E00AE3670 /* Maps2ViewController.m in Sources */,
+				22E933A51929B103004167D3 /* UIScrollView+CRScrollIndicator.m in Sources */,
 				22AB066B1924E5BB00AE3670 /* TLAlertView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

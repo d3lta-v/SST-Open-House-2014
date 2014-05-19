@@ -10,7 +10,7 @@
 #import "DetailViewController.h"
 #import "CommonMethods.h"
 
-static const float_t kAnimationTime = 0.4;
+static const float_t kAnimationTime = 0.35;
 
 @interface AcademicViewController ()
 {

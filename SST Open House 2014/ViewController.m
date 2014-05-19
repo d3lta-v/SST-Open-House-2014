@@ -29,25 +29,7 @@ static const float_t kShortAnimationTime = 0.5;
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    // Set all of the elements to alpha=0 to prep for fade in and fade in
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        SSTLogo.alpha=0;
-        gettingStarted.alpha=0;
-        curriculum.alpha=0;
-        activities.alpha=0;
-        maps.alpha=0;
-        facebook.alpha=0;
-        twitter.alpha=0;
-        info.alpha=0;
-        exhibition.alpha=0;
-        website.alpha=0;
-        arrow1.alpha=0;
-        arrow2.alpha=0;
-        swipeUp.alpha=0;
-        
-        [self startFadeIn];
-    });
+    
     
     // Add parallax effect to all elements
     UIMotionEffectGroup *group = [UIMotionEffectGroup new];
@@ -70,6 +52,26 @@ static const float_t kShortAnimationTime = 0.5;
     UISwipeGestureRecognizer *swipe = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(gotoAbout)];
     [swipe setDirection:UISwipeGestureRecognizerDirectionUp];
     [self.view addGestureRecognizer:swipe];
+    
+    // Set all of the elements to alpha=0 to prep for fade in and fade in
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        SSTLogo.alpha=0;
+        gettingStarted.alpha=0;
+        curriculum.alpha=0;
+        activities.alpha=0;
+        maps.alpha=0;
+        facebook.alpha=0;
+        twitter.alpha=0;
+        info.alpha=0;
+        exhibition.alpha=0;
+        website.alpha=0;
+        arrow1.alpha=0;
+        arrow2.alpha=0;
+        swipeUp.alpha=0;
+        
+        [self startFadeIn];
+    });
 }
 
 -(void)gotoAbout
@@ -79,29 +81,27 @@ static const float_t kShortAnimationTime = 0.5;
 
 -(void)startFadeIn
 {
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [CommonMethods viewAnimateEaseIn:SSTLogo delegate:self timeTaken:kAnimationTime completionBlock:^(BOOL finished){
-            [CommonMethods viewAnimateEaseIn:gettingStarted delegate:self timeTaken:kShortAnimationTime completionBlock:^(BOOL finished){
-                [CommonMethods viewAnimateEaseIn:curriculum delegate:self timeTaken:kShortAnimationTime completionBlock:^(BOOL finished){
-                    [CommonMethods viewAnimateEaseIn:activities delegate:self timeTaken:kShortAnimationTime completionBlock:^(BOOL finished){
-                        [CommonMethods viewAnimateEaseIn:maps delegate:self timeTaken:kShortAnimationTime completionBlock:^(BOOL finished){
-                            // start animating the series of buttons
-                            [CommonMethods viewAnimateEaseIn:facebook delegate:nil timeTaken:kShortAnimationTime completionBlock:nil];
-                            [CommonMethods viewAnimateEaseIn:twitter delegate:nil timeTaken:kShortAnimationTime completionBlock:nil];
-                            [CommonMethods viewAnimateEaseIn:info delegate:nil timeTaken:kShortAnimationTime completionBlock:nil];
-                            [CommonMethods viewAnimateEaseIn:exhibition delegate:nil timeTaken:kShortAnimationTime completionBlock:nil];
-                            [CommonMethods viewAnimateEaseIn:website delegate:self timeTaken:kShortAnimationTime completionBlock:^(BOOL finished){
-                                // start animating the swipe up for more info portion
-                                [CommonMethods viewAnimateEaseIn:swipeUp delegate:nil timeTaken:kShortAnimationTime completionBlock:nil];
-                                [CommonMethods viewAnimateEaseIn:arrow1 delegate:nil timeTaken:kShortAnimationTime completionBlock:nil];
-                                [CommonMethods viewAnimateEaseIn:arrow2 delegate:nil timeTaken:kShortAnimationTime completionBlock:nil];
-                            }];
+    [CommonMethods viewAnimateEaseIn:SSTLogo delegate:self timeTaken:kAnimationTime completionBlock:^(BOOL finished){
+        [CommonMethods viewAnimateEaseIn:gettingStarted delegate:self timeTaken:kShortAnimationTime completionBlock:^(BOOL finished){
+            [CommonMethods viewAnimateEaseIn:curriculum delegate:self timeTaken:kShortAnimationTime completionBlock:^(BOOL finished){
+                [CommonMethods viewAnimateEaseIn:activities delegate:self timeTaken:kShortAnimationTime completionBlock:^(BOOL finished){
+                    [CommonMethods viewAnimateEaseIn:maps delegate:self timeTaken:kShortAnimationTime completionBlock:^(BOOL finished){
+                        // start animating the series of buttons
+                        [CommonMethods viewAnimateEaseIn:facebook delegate:nil timeTaken:kShortAnimationTime completionBlock:nil];
+                        [CommonMethods viewAnimateEaseIn:twitter delegate:nil timeTaken:kShortAnimationTime completionBlock:nil];
+                        [CommonMethods viewAnimateEaseIn:info delegate:nil timeTaken:kShortAnimationTime completionBlock:nil];
+                        [CommonMethods viewAnimateEaseIn:exhibition delegate:nil timeTaken:kShortAnimationTime completionBlock:nil];
+                        [CommonMethods viewAnimateEaseIn:website delegate:self timeTaken:kShortAnimationTime completionBlock:^(BOOL finished){
+                            // start animating the swipe up for more info portion
+                            [CommonMethods viewAnimateEaseIn:swipeUp delegate:nil timeTaken:kShortAnimationTime completionBlock:nil];
+                            [CommonMethods viewAnimateEaseIn:arrow1 delegate:nil timeTaken:kShortAnimationTime completionBlock:nil];
+                            [CommonMethods viewAnimateEaseIn:arrow2 delegate:nil timeTaken:kShortAnimationTime completionBlock:nil];
                         }];
                     }];
                 }];
             }];
         }];
-    });
+    }];
 }
 
 -(BOOL)prefersStatusBarHidden

@@ -9,7 +9,7 @@
 #import "CurriculumViewController.h"
 #import "CommonMethods.h"
 
-static const float_t kAnimationTime = 0.55;
+static const float_t kAnimationTime = 0.45;
 
 @interface CurriculumViewController ()
 

@@ -9,7 +9,7 @@
 #import "CCAViewController.h"
 #import "CommonMethods.h"
 
-static const float_t kAnimationTime = 0.6;
+static const float_t kAnimationTime = 0.5;
 
 @interface CCAViewController ()
 
