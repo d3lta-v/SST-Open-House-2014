@@ -9,6 +9,10 @@
 #import "CRMotionView.h"
 #import "UIScrollView+CRScrollIndicator.h"
 
+#ifdef __APPLE__
+#include "TargetConditionals.h"
+#endif
+
 @import CoreMotion;
 
 static const CGFloat CRMotionViewRotationMinimumTreshold = 0.1f;
@@ -155,7 +159,9 @@ static const CGFloat CRMotionViewRotationFactor = 4.0f;
                                         }
                                     }];
     } else {
+#if !(TARGET_IPHONE_SIMULATOR)
         NSLog(@"There is not available gyro.");
+#endif
     }
 }
 

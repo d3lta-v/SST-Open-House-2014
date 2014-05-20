@@ -573,10 +573,10 @@
             </objects>
             <point key="canvasLocation" x="2224" y="1652"/>
         </scene>
-        <!--View Controller - Club CCAs-->
+        <!--Club View Controller - Club CCAs-->
         <scene sceneID="Edv-Zd-8k1">
             <objects>
-                <viewController id="Z3b-gv-eHR" sceneMemberID="viewController">
+                <viewController id="Z3b-gv-eHR" customClass="ClubViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="sBC-ey-S9M"/>
                         <viewControllerLayoutGuide type="bottom" id="azW-dD-2Vi"/>
@@ -589,11 +589,102 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RQU-Ef-W14">
+                                <rect key="frame" x="35" y="97" width="250" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
+                                <state key="normal" title="Robotics" backgroundImage="Button1">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="Z3b-gv-eHR" eventType="touchUpInside" id="64G-Qw-7rd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2QH-SJ-iVK">
+                                <rect key="frame" x="35" y="160" width="250" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
+                                <state key="normal" title="Media Club" backgroundImage="Button1">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="Z3b-gv-eHR" eventType="touchUpInside" id="jvh-0D-W4V"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UA5-Me-Gag">
+                                <rect key="frame" x="35" y="223" width="250" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
+                                <state key="normal" title="SYFC" backgroundImage="Button1">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="Z3b-gv-eHR" eventType="touchUpInside" id="wVy-gf-q17"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJp-Jv-Uis">
+                                <rect key="frame" x="35" y="286" width="250" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
+                                <state key="normal" title="Astronomy Club" backgroundImage="Button1">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="Z3b-gv-eHR" eventType="touchUpInside" id="PRY-qG-UZq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hKi-aW-Pwy">
+                                <rect key="frame" x="35" y="349" width="250" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
+                                <state key="normal" title="Drama Club" backgroundImage="Button1">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="Z3b-gv-eHR" eventType="touchUpInside" id="IiM-kE-AUM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UG7-m3-YZe">
+                                <rect key="frame" x="35" y="412" width="250" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
+                                <state key="normal" title="Show Choir" backgroundImage="Button1">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="Z3b-gv-eHR" eventType="touchUpInside" id="fyq-DP-9q1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZBN-ZT-UcM">
+                                <rect key="frame" x="35" y="475" width="250" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
+                                <state key="normal" title="Guitar Ensemble" backgroundImage="Button1">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="Z3b-gv-eHR" eventType="touchUpInside" id="6Dl-oc-aQ1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Club CCAs" id="Zvu-eE-QgC"/>
                     <connections>
+                        <outletCollection property="buttons" destination="RQU-Ef-W14" id="DwF-VW-72k"/>
+                        <outletCollection property="buttons" destination="2QH-SJ-iVK" id="Vqf-tg-54g"/>
+                        <outletCollection property="buttons" destination="UA5-Me-Gag" id="UXK-6U-Qni"/>
+                        <outletCollection property="buttons" destination="qJp-Jv-Uis" id="yCg-fr-JiM"/>
+                        <outletCollection property="buttons" destination="hKi-aW-Pwy" id="khU-8r-Ped"/>
+                        <outletCollection property="buttons" destination="UG7-m3-YZe" id="NsK-Ke-qaM"/>
+                        <outletCollection property="buttons" destination="ZBN-ZT-UcM" id="OMx-6G-LqT"/>
                         <segue destination="96O-GW-2di" kind="push" identifier="gotoClubDetails" id="cYd-Ua-wNW"/>
                     </connections>
                 </viewController>
@@ -601,10 +692,10 @@
             </objects>
             <point key="canvasLocation" x="2760" y="1652"/>
         </scene>
-        <!--View Controller - Uniform Groups-->
+        <!--Uniform View Controller - Uniform Groups-->
         <scene sceneID="UiQ-N0-m0W">
             <objects>
-                <viewController id="eea-7T-mDB" sceneMemberID="viewController">
+                <viewController id="eea-7T-mDB" customClass="UniformViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="NIm-8C-wGf"/>
                         <viewControllerLayoutGuide type="bottom" id="yu6-Z0-QGc"/>
@@ -617,12 +708,25 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KDx-dD-9iR">
+                                <rect key="frame" x="35" y="256" width="250" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
+                                <state key="normal" title="Scouts" backgroundImage="Button1">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="eea-7T-mDB" eventType="touchUpInside" id="aNO-Al-kQD"/>
+                                    <action selector="buttonTapped:" destination="Z3b-gv-eHR" eventType="touchUpInside" id="Sk1-f4-eYR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Uniform Groups" id="9ly-Ca-ORi"/>
                     <connections>
-                        <segue destination="96O-GW-2di" kind="push" identifier="gotoUniformDetails" id="aAB-ys-9IQ"/>
+                        <segue destination="96O-GW-2di" kind="push" identifier="gotoUniformDetail" id="aAB-ys-9IQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9IK-Fx-Krf" userLabel="First Responder" sceneMemberID="firstResponder"/>

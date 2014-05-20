@@ -49,6 +49,7 @@
 		22E933A81929B12C004167D3 /* CCADetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E933A71929B12C004167D3 /* CCADetailsViewController.m */; };
 		22E933AA1929B15D004167D3 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22E933A91929B15D004167D3 /* CoreMotion.framework */; };
 		22E933AD192A3553004167D3 /* ClubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E933AC192A3553004167D3 /* ClubViewController.m */; };
+		22E933B0192B56F9004167D3 /* UniformViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E933AF192B56F9004167D3 /* UniformViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -134,6 +135,8 @@
 		22E933A91929B15D004167D3 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		22E933AB192A3553004167D3 /* ClubViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClubViewController.h; sourceTree = "<group>"; };
 		22E933AC192A3553004167D3 /* ClubViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClubViewController.m; sourceTree = "<group>"; };
+		22E933AE192B56F9004167D3 /* UniformViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UniformViewController.h; sourceTree = "<group>"; };
+		22E933AF192B56F9004167D3 /* UniformViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UniformViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -327,6 +330,8 @@
 				22E9339A1928DAAD004167D3 /* SportsViewController.m */,
 				22E933AB192A3553004167D3 /* ClubViewController.h */,
 				22E933AC192A3553004167D3 /* ClubViewController.m */,
+				22E933AE192B56F9004167D3 /* UniformViewController.h */,
+				22E933AF192B56F9004167D3 /* UniformViewController.m */,
 				22E933A61929B12C004167D3 /* CCADetailsViewController.h */,
 				22E933A71929B12C004167D3 /* CCADetailsViewController.m */,
 			);
@@ -460,6 +465,7 @@
 				22E9339219285A3B004167D3 /* ActivitiesDetailViewController.m in Sources */,
 				22E9338F19284B92004167D3 /* ActivitiesViewController.m in Sources */,
 				22E933AD192A3553004167D3 /* ClubViewController.m in Sources */,
+				22E933B0192B56F9004167D3 /* UniformViewController.m in Sources */,
 				22AB066A1924E5BB00AE3670 /* SVProgressHUD.m in Sources */,
 				22AB06381924C26600AE3670 /* AppDelegate.m in Sources */,
 				2262FCB519277F3E00B018F2 /* DetailViewController.m in Sources */,

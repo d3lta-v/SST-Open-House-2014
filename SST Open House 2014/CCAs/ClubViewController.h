@@ -10,4 +10,8 @@
 
 @interface ClubViewController : UIViewController
 
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *buttons;
+
+- (IBAction)buttonTapped:(id)sender;
+
 @end

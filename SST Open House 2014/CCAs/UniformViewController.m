@@ -1,25 +1,23 @@
 //
-//  SportsDetailsViewController.m
+//  UniformViewController.m
 //  Open House
 //
-//  Created by Pan Ziyue on 19/5/14.
+//  Created by Pan Ziyue on 20/5/14.
 //  Copyright (c) 2014 Cyber Inc & StatiX Industries. All rights reserved.
 //
 
+#import "UniformViewController.h"
 #import "CCADetailsViewController.h"
-#import "CRMotionView.h"
+#import "CommonMethods.h"
 
-#ifdef __APPLE__
-#include "TargetConditionals.h"
-#endif
-
-@interface CCADetailsViewController ()
+@interface UniformViewController ()
+{
+    NSUInteger identifier;
+}
 
 @end
 
-@implementation CCADetailsViewController
-
-@synthesize textViewText, imageToUse, headerTitle;
+@implementation UniformViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -34,18 +32,6 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    CRMotionView *motionView = [[CRMotionView alloc] initWithFrame:self.view.bounds];
-    [motionView setImage:imageToUse];
-#if (TARGET_IPHONE_SIMULATOR)
-    [motionView setMotionEnabled:NO];
-#endif
-    [self.view addSubview:motionView];
-    [_textView setText:textViewText];
-    [_textView setTextColor:[UIColor whiteColor]];
-    [_textView setBackgroundColor:[UIColor colorWithRed:1 green:1 blue:1 alpha:0.25]];
-    [_textView setFont:[UIFont preferredFontForTextStyle:UIFontTextStyleBody]];
-    [self.view bringSubviewToFront:_textView];
 }
 
 - (void)didReceiveMemoryWarning
@@ -54,7 +40,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -62,7 +48,15 @@
 {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+        [[segue destinationViewController] setTitle:@"Scouts"];
+        [[segue destinationViewController] setImageToUse:[UIImage imageNamed:@"Scouts"]];
+        [[segue destinationViewController] setTextViewText:@"The Scouts CCA was started in 2014 by a group of very enthusistic students who wanted to explore the outdoors."];
 }
-*/
+
+
+- (IBAction)buttonPressed:(id)sender {
+    identifier=[sender tag];
+    [self performSegueWithIdentifier:@"gotoUniformDetail" sender:self];
+}
 
 @end
