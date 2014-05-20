@@ -48,9 +48,9 @@
 {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
-        [[segue destinationViewController] setTitle:@"Scouts"];
-        [[segue destinationViewController] setImageToUse:[UIImage imageNamed:@"Scouts"]];
-        [[segue destinationViewController] setTextViewText:@"The Scouts CCA was started in 2014 by a group of very enthusistic students who wanted to explore the outdoors."];
+    [[segue destinationViewController] setTitle:@"Scouts"];
+    [[segue destinationViewController] setImageToUse:[UIImage imageNamed:@"Scouts"]];
+    [[segue destinationViewController] setTextViewText:@"The Scouts CCA was started in 2014 by a group of very enthusistic students who wanted to explore the outdoors."];
 }
 
 
