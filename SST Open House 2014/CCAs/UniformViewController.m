@@ -10,6 +10,8 @@
 #import "CCADetailsViewController.h"
 #import "CommonMethods.h"
 
+static const float_t kAnimationTime = 0.35;
+
 @interface UniformViewController ()
 {
     NSUInteger identifier;
@@ -18,6 +20,8 @@
 @end
 
 @implementation UniformViewController
+
+@synthesize buttonScout;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -32,6 +36,11 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        buttonScout.alpha=0;
+        [CommonMethods viewAnimateEaseIn:buttonScout delegate:nil timeTaken:kAnimationTime completionBlock:nil];
+    });
 }
 
 - (void)didReceiveMemoryWarning

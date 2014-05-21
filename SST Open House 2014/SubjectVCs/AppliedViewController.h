@@ -10,4 +10,8 @@
 
 @interface AppliedViewController : UIViewController
 
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *buttons;
+
+- (IBAction)buttonPressed:(id)sender;
+
 @end

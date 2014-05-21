@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		221AC252192C39250059A5BF /* Detail2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 221AC251192C39250059A5BF /* Detail2ViewController.m */; };
 		223250131926624A00E634E0 /* GettingStartedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 223250121926624A00E634E0 /* GettingStartedViewController.m */; };
 		22325016192716D100E634E0 /* CurriculumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22325015192716D100E634E0 /* CurriculumViewController.m */; };
 		2262FCAC19277B3700B018F2 /* AcademicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2262FCAB19277B3700B018F2 /* AcademicViewController.m */; };
@@ -63,6 +64,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		221AC250192C39250059A5BF /* Detail2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Detail2ViewController.h; sourceTree = "<group>"; };
+		221AC251192C39250059A5BF /* Detail2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Detail2ViewController.m; sourceTree = "<group>"; };
 		223250111926624A00E634E0 /* GettingStartedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GettingStartedViewController.h; sourceTree = "<group>"; };
 		223250121926624A00E634E0 /* GettingStartedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GettingStartedViewController.m; sourceTree = "<group>"; };
 		22325014192716D100E634E0 /* CurriculumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurriculumViewController.h; sourceTree = "<group>"; };
@@ -175,6 +178,8 @@
 				2262FCB119277E9600B018F2 /* CCAViewController.m */,
 				2262FCB319277F3E00B018F2 /* DetailViewController.h */,
 				2262FCB419277F3E00B018F2 /* DetailViewController.m */,
+				221AC250192C39250059A5BF /* Detail2ViewController.h */,
+				221AC251192C39250059A5BF /* Detail2ViewController.m */,
 			);
 			path = SubjectVCs;
 			sourceTree = "<group>";
@@ -462,6 +467,7 @@
 				22AB066E1924EEDC00AE3670 /* CommonMethods.m in Sources */,
 				22E933A81929B12C004167D3 /* CCADetailsViewController.m in Sources */,
 				22E9339B1928DAAD004167D3 /* SportsViewController.m in Sources */,
+				221AC252192C39250059A5BF /* Detail2ViewController.m in Sources */,
 				22E9339219285A3B004167D3 /* ActivitiesDetailViewController.m in Sources */,
 				22E9338F19284B92004167D3 /* ActivitiesViewController.m in Sources */,
 				22E933AD192A3553004167D3 /* ClubViewController.m in Sources */,

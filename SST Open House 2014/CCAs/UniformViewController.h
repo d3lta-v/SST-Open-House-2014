@@ -10,6 +10,8 @@
 
 @interface UniformViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIButton *buttonScout;
+
 - (IBAction)buttonPressed:(id)sender;
 
 @end
