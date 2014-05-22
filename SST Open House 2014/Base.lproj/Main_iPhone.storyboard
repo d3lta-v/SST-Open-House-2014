@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -1598,16 +1598,16 @@
         <image name="Cyber" width="325" height="194"/>
         <image name="Exhibition" width="250" height="250"/>
         <image name="ExhibitionSelected" width="250" height="250"/>
-        <image name="Facebook" width="500" height="500"/>
-        <image name="FacebookSelected" width="500" height="500"/>
+        <image name="Facebook" width="250" height="250"/>
+        <image name="FacebookSelected" width="250" height="250"/>
         <image name="Inc" width="238" height="141"/>
         <image name="Info" width="250" height="250"/>
         <image name="InfoSelected" width="250" height="250"/>
         <image name="MainBlur" width="320" height="568"/>
-        <image name="SSTLOGO" width="320" height="200"/>
+        <image name="SSTLOGO" width="640" height="400"/>
         <image name="StatiX" width="512" height="512"/>
-        <image name="Twitter" width="500" height="500"/>
-        <image name="TwitterSelected" width="500" height="500"/>
+        <image name="Twitter" width="250" height="250"/>
+        <image name="TwitterSelected" width="250" height="250"/>
         <image name="WEB" width="250" height="250"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
