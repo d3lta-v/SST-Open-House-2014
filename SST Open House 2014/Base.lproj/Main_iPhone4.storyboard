@@ -41,6 +41,7 @@
                                 <state key="normal" title="Web" image="WEB">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="highlighted" image="WebSelected"/>
                                 <connections>
                                     <action selector="launchWebsite:" destination="tvH-cz-v01" eventType="touchUpInside" id="RHl-xh-5RM"/>
                                 </connections>
@@ -1599,17 +1600,18 @@
         <image name="Cyber" width="325" height="194"/>
         <image name="Exhibition" width="250" height="250"/>
         <image name="ExhibitionSelected" width="250" height="250"/>
-        <image name="Facebook" width="500" height="500"/>
-        <image name="FacebookSelected" width="500" height="500"/>
+        <image name="Facebook" width="250" height="250"/>
+        <image name="FacebookSelected" width="250" height="250"/>
         <image name="Inc" width="238" height="141"/>
         <image name="Info" width="250" height="250"/>
         <image name="InfoSelected" width="250" height="250"/>
         <image name="MainBlur" width="320" height="568"/>
         <image name="SSTLOGO" width="320" height="200"/>
         <image name="StatiX" width="512" height="512"/>
-        <image name="Twitter" width="500" height="500"/>
-        <image name="TwitterSelected" width="500" height="500"/>
+        <image name="Twitter" width="250" height="250"/>
+        <image name="TwitterSelected" width="250" height="250"/>
         <image name="WEB" width="250" height="250"/>
+        <image name="WebSelected" width="250" height="250"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

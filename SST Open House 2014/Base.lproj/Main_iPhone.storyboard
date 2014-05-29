@@ -41,6 +41,7 @@
                                 <state key="normal" title="Web" image="WEB">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="highlighted" image="WebSelected"/>
                                 <connections>
                                     <action selector="launchWebsite:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Tep-Oz-5KN"/>
                                 </connections>
@@ -1604,11 +1605,12 @@
         <image name="Info" width="250" height="250"/>
         <image name="InfoSelected" width="250" height="250"/>
         <image name="MainBlur" width="320" height="568"/>
-        <image name="SSTLOGO" width="370" height="231"/>
+        <image name="SSTLOGO" width="320" height="200"/>
         <image name="StatiX" width="512" height="512"/>
         <image name="Twitter" width="250" height="250"/>
         <image name="TwitterSelected" width="250" height="250"/>
         <image name="WEB" width="250" height="250"/>
+        <image name="WebSelected" width="250" height="250"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
